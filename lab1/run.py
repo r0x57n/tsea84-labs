@@ -41,6 +41,7 @@ lib.set_generic("wordlength", 12)
 lib.set_generic("shift_wordlength", 3)
 lib.set_generic("pipeline", 0)
 lib.set_generic("file_name", abspath("tests.txt"))
+# lib.set_generic("file_name", abspath("testing.txt"))
 # Set if logic_op is an enum or binary
 # False: use enum
 # True: use binary (for Verilog and synthesized)

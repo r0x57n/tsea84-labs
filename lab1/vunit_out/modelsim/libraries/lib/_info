@@ -5,6 +5,54 @@ Z0 !s99 nomlopt
 R0
 R0
 R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s11e vcom 2021.3 2021.07, Jul 13 2021
 13
 !s112 1.1
@@ -14,46 +62,57 @@ R0
 cModel Technology
 Z1 d/home/raswa151/courses/tsea84-labs/lab1
 T_opt
-!s110 1725813349
-VPn9lP40B^O3:f;_IXkz[10
+!s110 1725893415
+VE>=ffdWC[KNGA9hjQdA>R3
 Z2 04 5 2 work tb_pe tb 1
-=1-001b213b2bbc-66ddd264-cffd2-20845
+=1-001b213b2bbc-66df0b26-ee628-216fe
 Z3 !s124 OEM100
-o-quiet -auto_acc_if_foreign -work lib -L vunit_lib -L lib -g /tb_pe/logic_op=False -g /tb_pe/file_name=/home/raswa151/courses/tsea84-labs/lab1/tests.txt -g {/tb_pe/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/raswa151/courses/tsea84-labs/lab1/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/,tb path : /home/raswa151/courses/tsea84-labs/lab1/,use_color : false"} -g /tb_pe/pipeline=0 -g /tb_pe/wordlength=12 -g /tb_pe/shift_wordlength=3
+o-quiet -auto_acc_if_foreign -work lib -L vunit_lib -L lib -g /tb_pe/logic_op=False -g /tb_pe/file_name=/home/raswa151/courses/tsea84-labs/lab1/testing.txt -g {/tb_pe/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/raswa151/courses/tsea84-labs/lab1/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/,tb path : /home/raswa151/courses/tsea84-labs/lab1/,use_color : false"} -g /tb_pe/pipeline=0 -g /tb_pe/wordlength=12 -g /tb_pe/shift_wordlength=3
 Z4 tCvgOpt 0
 n@_opt
 Z5 OL;O;2021.3;73
 R1
 T_opt1
-!s110 1725813569
-VBUYRo8]LSF>h?z<H[`6k`1
+!s110 1725893817
+V4a:GeQ4^K>cheAhSJkeER0
 R2
-=1-001b213b2bbc-66ddd341-1820b-20dd7
+=1-001b213b2bbc-66df0cb8-dc8e4-229d6
 R3
 o-quiet -auto_acc_if_foreign -work lib -L vunit_lib -L lib -g /tb_pe/logic_op=False -g /tb_pe/file_name=/home/raswa151/courses/tsea84-labs/lab1/tests.txt -g {/tb_pe/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/raswa151/courses/tsea84-labs/lab1/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/,tb path : /home/raswa151/courses/tsea84-labs/lab1/,use_color : true"} -g /tb_pe/pipeline=0 -g /tb_pe/wordlength=12 -g /tb_pe/shift_wordlength=3
 R4
 n@_opt1
 R5
+T_opt2
+!s110 1725893551
+V[h8mB>kEF[C^6li3@zLoR1
+R2
+=1-001b213b2bbc-66df0bae-b3c86-21beb
+R3
+o-quiet -auto_acc_if_foreign -work lib -L vunit_lib -L lib -g /tb_pe/logic_op=False -g /tb_pe/file_name=/home/raswa151/courses/tsea84-labs/lab1/testing.txt -g {/tb_pe/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/raswa151/courses/tsea84-labs/lab1/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/,tb path : /home/raswa151/courses/tsea84-labs/lab1/,use_color : true"} -g /tb_pe/pipeline=0 -g /tb_pe/wordlength=12 -g /tb_pe/shift_wordlength=3
+R4
+n@_opt2
+R5
+R1
 Epe
-Z6 w1725607378
+Z6 w1725893814
 Z7 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
 Z8 DPx4 work 8 pe_types 0 22 TP58_bX_`7n=QEY:W0?mX1
 Z9 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z10 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z11 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 9
+!i122 101
 R1
 Z12 8/home/raswa151/courses/tsea84-labs/lab1/PE.vhdl
 Z13 F/home/raswa151/courses/tsea84-labs/lab1/PE.vhdl
 l0
 L11 1
-V8RefI_ahT?UhofD[Gci::2
-!s100 g<WkHEbIzW8z?n[BKW;d`3
+V]<a>^AcMckdPGQn^`YYY:1
+!s100 9]5?OjK8S?@LbHNAI@:L10
 Z14 OL;C;2021.3;73
 33
-Z15 !s110 1725813316
+Z15 !s110 1725893816
 !i10b 1
-Z16 !s108 1725813316.000000
+Z16 !s108 1725893816.000000
 Z17 !s90 -quiet|-modelsimini|/home/raswa151/courses/tsea84-labs/lab1/vunit_out/modelsim/modelsim.ini|+cover=bs|-2008|-work|lib|/home/raswa151/courses/tsea84-labs/lab1/PE.vhdl|
 Z18 !s107 /home/raswa151/courses/tsea84-labs/lab1/PE.vhdl|
 !i113 0
@@ -66,12 +125,12 @@ R8
 R9
 R10
 R11
-Z22 DEx4 work 2 pe 0 22 8RefI_ahT?UhofD[Gci::2
-!i122 9
-l39
-L28 57
-VVo[`@eJLdS3BE<W3KFkUH3
-!s100 P1P>T5GO:HA?>C4SU1YGN2
+Z22 DEx4 work 2 pe 0 22 ]<a>^AcMckdPGQn^`YYY:1
+!i122 101
+l34
+L28 97
+VCd5hJ3cf4GD=R1AbDYW060
+!s100 `>?6<X<JF<n3Z`R=Q`NH?0
 R14
 33
 R15
@@ -89,10 +148,10 @@ R11
 R10
 R9
 !i122 8
-R6
+Z23 w1725607378
 R1
-Z23 8/home/raswa151/courses/tsea84-labs/lab1/pe_types.vhdl
-Z24 F/home/raswa151/courses/tsea84-labs/lab1/pe_types.vhdl
+Z24 8/home/raswa151/courses/tsea84-labs/lab1/pe_types.vhdl
+Z25 F/home/raswa151/courses/tsea84-labs/lab1/pe_types.vhdl
 l0
 L6 1
 VTP58_bX_`7n=QEY:W0?mX1
@@ -100,11 +159,11 @@ VTP58_bX_`7n=QEY:W0?mX1
 R14
 33
 b1
-Z25 !s110 1725813315
+Z26 !s110 1725813315
 !i10b 1
-Z26 !s108 1725813315.000000
-Z27 !s90 -quiet|-modelsimini|/home/raswa151/courses/tsea84-labs/lab1/vunit_out/modelsim/modelsim.ini|+cover=bs|-2008|-work|lib|/home/raswa151/courses/tsea84-labs/lab1/pe_types.vhdl|
-Z28 !s107 /home/raswa151/courses/tsea84-labs/lab1/pe_types.vhdl|
+Z27 !s108 1725813315.000000
+Z28 !s90 -quiet|-modelsimini|/home/raswa151/courses/tsea84-labs/lab1/vunit_out/modelsim/modelsim.ini|+cover=bs|-2008|-work|lib|/home/raswa151/courses/tsea84-labs/lab1/pe_types.vhdl|
+Z29 !s107 /home/raswa151/courses/tsea84-labs/lab1/pe_types.vhdl|
 !i113 0
 R19
 R20
@@ -122,68 +181,68 @@ VUJTWAVboJaPndMGZ[E@;N2
 !s100 WI4>Igj;J9kB[kafQNHQG1
 R14
 33
-R25
-!i10b 1
 R26
+!i10b 1
 R27
 R28
+R29
 !i113 0
 R19
 R20
 R21
 Etb_pe
-Z29 w1725812656
+Z30 w1725812656
 R8
-Z30 D^#x9 vunit_lib 13 vunit_context 0 22 E1eDC:YPF9F?CkC5@`Y4Z3
-Z31 DPx9 vunit_lib 9 event_pkg 0 22 ddma=zlXYD^V[j?6M^FW`1
-Z32 DPx9 vunit_lib 18 run_deprecated_pkg 0 22 06HHNn=l0Y?PoSLo8^<h00
-Z33 DPx9 vunit_lib 20 check_deprecated_pkg 0 22 Y>TVz>[kI8XoP@P02gCOJ2
-Z34 DPx9 vunit_lib 9 check_pkg 0 22 8L:IJ9Pn5]Khc2NeiGX>U0
-Z35 DPx9 vunit_lib 12 location_pkg 0 22 eTR]aAMTZk5jVzX_>d^e^3
-Z36 DPx9 vunit_lib 11 checker_pkg 0 22 10:=gIeZ0T42U6IHFOI9L2
-Z37 DPx9 vunit_lib 18 log_deprecated_pkg 0 22 Q7[lfBh_WC:ca^W64YP1U2
-Z38 DPx9 vunit_lib 9 print_pkg 0 22 z3A9G[B4JdMci]Ub;PK=S3
-Z39 DPx9 vunit_lib 4 path 0 22 ]@TR:IFM`TWfiVL<ZjY=I3
-Z40 D^#x9 vunit_lib 18 data_types_context 0 22 [Ik[<YbW8Ag;h5P``aP2g3
-Z41 DPx9 vunit_lib 8 dict_pkg 0 22 DZofdIDPKj^6>SCK2ibBP0
-Z42 DPx9 vunit_lib 19 byte_vector_ptr_pkg 0 22 nMb7G]QlQkbCia?ecQlOB1
-Z43 DPx9 vunit_lib 14 queue_pool_pkg 0 22 W_@1eWPT4E>cBF2g>m`PC0
-Z44 DPx9 vunit_lib 16 event_common_pkg 0 22 CoAkGgY=ijY1e_dA]KCjc0
-Z45 DPx9 vunit_lib 17 event_private_pkg 0 22 LY^g<DkfZ8A@]2T67iO3e3
-Z46 DPx9 vunit_lib 10 dictionary 0 22 _W8>On_YoEFWEDP8TQC@R0
-Z47 DPx9 vunit_lib 13 run_types_pkg 0 22 9^B1Rd5=VO<fSYklGe06K2
-Z48 DPx9 vunit_lib 27 integer_vector_ptr_pool_pkg 0 22 ?CDRVU5zei43PK@m<9Bb<3
-Z49 DPx9 vunit_lib 22 data_types_private_pkg 0 22 =j2oKIJ>9=Cgn][?6oR7=3
-Z50 DPx9 vunit_lib 17 integer_array_pkg 0 22 BT87f0J6MiE^QUEHRhVn?2
-Z51 DPx9 vunit_lib 9 queue_pkg 0 22 8UT9O0e]z@k9l=7oC[mfg3
-Z52 DPx9 vunit_lib 19 string_ptr_pool_pkg 0 22 TIY7i_LfUHjKb5_d2B;d83
-Z53 DPx9 vunit_lib 10 runner_pkg 0 22 X;C]S@ZS>2MQ@ED4GJ_D;3
-Z54 DPx9 vunit_lib 8 stop_pkg 0 22 UjKiHFdPQ97>_>m`nM3cg3
-Z55 DPx9 vunit_lib 8 core_pkg 0 22 0M7EG>QDghVT?B78KOYPn0
-Z56 DPx9 vunit_lib 10 string_ops 0 22 g0i<P2ggC2:SG9QDGlY]L0
-Z57 DPx9 vunit_lib 6 id_pkg 0 22 HU`?MIdjo`3g6=idf7>XP1
-Z58 DPx9 vunit_lib 27 external_integer_vector_pkg 0 22 hl?S7F7[zeX8D09=mXj_W2
-Z59 DPx9 vunit_lib 22 integer_vector_ptr_pkg 0 22 dQHde;mb=n>VUWALE0?M33
-Z60 DPx9 vunit_lib 15 log_handler_pkg 0 22 nXdPa`1VHm?9d=UZ]cg`J0
-Z61 DPx9 vunit_lib 8 ansi_pkg 0 22 h9cG]NHf=IYSX>SV5U_OM1
-Z62 DPx9 vunit_lib 17 codec_builder_pkg 0 22 lMzaQB]AGo[9c?7g60J_93
+Z31 D^#x9 vunit_lib 13 vunit_context 0 22 E1eDC:YPF9F?CkC5@`Y4Z3
+Z32 DPx9 vunit_lib 9 event_pkg 0 22 ddma=zlXYD^V[j?6M^FW`1
+Z33 DPx9 vunit_lib 18 run_deprecated_pkg 0 22 06HHNn=l0Y?PoSLo8^<h00
+Z34 DPx9 vunit_lib 20 check_deprecated_pkg 0 22 Y>TVz>[kI8XoP@P02gCOJ2
+Z35 DPx9 vunit_lib 9 check_pkg 0 22 8L:IJ9Pn5]Khc2NeiGX>U0
+Z36 DPx9 vunit_lib 12 location_pkg 0 22 eTR]aAMTZk5jVzX_>d^e^3
+Z37 DPx9 vunit_lib 11 checker_pkg 0 22 10:=gIeZ0T42U6IHFOI9L2
+Z38 DPx9 vunit_lib 18 log_deprecated_pkg 0 22 Q7[lfBh_WC:ca^W64YP1U2
+Z39 DPx9 vunit_lib 9 print_pkg 0 22 z3A9G[B4JdMci]Ub;PK=S3
+Z40 DPx9 vunit_lib 4 path 0 22 ]@TR:IFM`TWfiVL<ZjY=I3
+Z41 D^#x9 vunit_lib 18 data_types_context 0 22 [Ik[<YbW8Ag;h5P``aP2g3
+Z42 DPx9 vunit_lib 8 dict_pkg 0 22 DZofdIDPKj^6>SCK2ibBP0
+Z43 DPx9 vunit_lib 19 byte_vector_ptr_pkg 0 22 nMb7G]QlQkbCia?ecQlOB1
+Z44 DPx9 vunit_lib 14 queue_pool_pkg 0 22 W_@1eWPT4E>cBF2g>m`PC0
+Z45 DPx9 vunit_lib 16 event_common_pkg 0 22 CoAkGgY=ijY1e_dA]KCjc0
+Z46 DPx9 vunit_lib 17 event_private_pkg 0 22 LY^g<DkfZ8A@]2T67iO3e3
+Z47 DPx9 vunit_lib 10 dictionary 0 22 _W8>On_YoEFWEDP8TQC@R0
+Z48 DPx9 vunit_lib 13 run_types_pkg 0 22 9^B1Rd5=VO<fSYklGe06K2
+Z49 DPx9 vunit_lib 27 integer_vector_ptr_pool_pkg 0 22 ?CDRVU5zei43PK@m<9Bb<3
+Z50 DPx9 vunit_lib 22 data_types_private_pkg 0 22 =j2oKIJ>9=Cgn][?6oR7=3
+Z51 DPx9 vunit_lib 17 integer_array_pkg 0 22 BT87f0J6MiE^QUEHRhVn?2
+Z52 DPx9 vunit_lib 9 queue_pkg 0 22 8UT9O0e]z@k9l=7oC[mfg3
+Z53 DPx9 vunit_lib 19 string_ptr_pool_pkg 0 22 TIY7i_LfUHjKb5_d2B;d83
+Z54 DPx9 vunit_lib 10 runner_pkg 0 22 X;C]S@ZS>2MQ@ED4GJ_D;3
+Z55 DPx9 vunit_lib 8 stop_pkg 0 22 UjKiHFdPQ97>_>m`nM3cg3
+Z56 DPx9 vunit_lib 8 core_pkg 0 22 0M7EG>QDghVT?B78KOYPn0
+Z57 DPx9 vunit_lib 10 string_ops 0 22 g0i<P2ggC2:SG9QDGlY]L0
+Z58 DPx9 vunit_lib 6 id_pkg 0 22 HU`?MIdjo`3g6=idf7>XP1
+Z59 DPx9 vunit_lib 27 external_integer_vector_pkg 0 22 hl?S7F7[zeX8D09=mXj_W2
+Z60 DPx9 vunit_lib 22 integer_vector_ptr_pkg 0 22 dQHde;mb=n>VUWALE0?M33
+Z61 DPx9 vunit_lib 15 log_handler_pkg 0 22 nXdPa`1VHm?9d=UZ]cg`J0
+Z62 DPx9 vunit_lib 8 ansi_pkg 0 22 h9cG]NHf=IYSX>SV5U_OM1
+Z63 DPx9 vunit_lib 17 codec_builder_pkg 0 22 lMzaQB]AGo[9c?7g60J_93
 R9
-Z63 DPx4 ieee 11 numeric_bit 0 22 G2;d`f^X6V]cQEn8_38:i1
+Z64 DPx4 ieee 11 numeric_bit 0 22 G2;d`f^X6V]cQEn8_38:i1
 R7
-Z64 DPx4 ieee 12 math_complex 0 22 lndMRF4<kJnT_9]@:30S@3
+Z65 DPx4 ieee 12 math_complex 0 22 lndMRF4<kJnT_9]@:30S@3
 R10
 R11
-Z65 DPx9 vunit_lib 9 codec_pkg 0 22 VE]>YKnj@eiUJ<U1YSEXb3
-Z66 DPx9 vunit_lib 19 external_string_pkg 0 22 iE_JL@S7G[ScLPziLPH3]3
-Z67 DPx9 vunit_lib 9 types_pkg 0 22 8X1EBI95Q8hI=Vi3D9DP;0
-Z68 DPx9 vunit_lib 14 string_ptr_pkg 0 22 n[AzFb_A:6S@HQFZYcL]h0
-Z69 DPx9 vunit_lib 14 log_levels_pkg 0 22 jGUFnEUH1mU?HKm3YRPGj3
-Z70 DPx9 vunit_lib 10 logger_pkg 0 22 9nPheBS@bT874<hoS?FaX1
-Z71 DPx9 vunit_lib 7 run_pkg 0 22 S;6MBFgPTlBz:X;OzeDhN2
-!i122 10
+Z66 DPx9 vunit_lib 9 codec_pkg 0 22 VE]>YKnj@eiUJ<U1YSEXb3
+Z67 DPx9 vunit_lib 19 external_string_pkg 0 22 iE_JL@S7G[ScLPziLPH3]3
+Z68 DPx9 vunit_lib 9 types_pkg 0 22 8X1EBI95Q8hI=Vi3D9DP;0
+Z69 DPx9 vunit_lib 14 string_ptr_pkg 0 22 n[AzFb_A:6S@HQFZYcL]h0
+Z70 DPx9 vunit_lib 14 log_levels_pkg 0 22 jGUFnEUH1mU?HKm3YRPGj3
+Z71 DPx9 vunit_lib 10 logger_pkg 0 22 9nPheBS@bT874<hoS?FaX1
+Z72 DPx9 vunit_lib 7 run_pkg 0 22 S;6MBFgPTlBz:X;OzeDhN2
+!i122 102
 R1
-Z72 8/home/raswa151/courses/tsea84-labs/lab1/tb_pe.vhdl
-Z73 F/home/raswa151/courses/tsea84-labs/lab1/tb_pe.vhdl
+Z73 8/home/raswa151/courses/tsea84-labs/lab1/tb_pe.vhdl
+Z74 F/home/raswa151/courses/tsea84-labs/lab1/tb_pe.vhdl
 l0
 L16 1
 VdiFlH6J=z@_3aZDXFNQbg2
@@ -193,8 +252,8 @@ R14
 R15
 !i10b 1
 R16
-Z74 !s90 -quiet|-modelsimini|/home/raswa151/courses/tsea84-labs/lab1/vunit_out/modelsim/modelsim.ini|+cover=bs|-2008|-work|lib|/home/raswa151/courses/tsea84-labs/lab1/tb_pe.vhdl|
-Z75 !s107 /home/raswa151/courses/tsea84-labs/lab1/tb_pe.vhdl|
+Z75 !s90 -quiet|-modelsimini|/home/raswa151/courses/tsea84-labs/lab1/vunit_out/modelsim/modelsim.ini|+cover=bs|-2008|-work|lib|/home/raswa151/courses/tsea84-labs/lab1/tb_pe.vhdl|
+Z76 !s107 /home/raswa151/courses/tsea84-labs/lab1/tb_pe.vhdl|
 !i113 0
 R19
 R20
@@ -202,7 +261,6 @@ R21
 Atb
 R22
 R8
-R30
 R31
 R32
 R33
@@ -235,21 +293,22 @@ R59
 R60
 R61
 R62
-R9
 R63
-R7
+R9
 R64
+R7
+R65
 R10
 R11
-R65
 R66
 R67
 R68
 R69
 R70
 R71
+R72
 DEx4 work 5 tb_pe 0 22 diFlH6J=z@_3aZDXFNQbg2
-!i122 10
+!i122 102
 l53
 L28 147
 VDbB>NQjgmR[hD<<>>SR?:0
@@ -259,8 +318,8 @@ R14
 R15
 !i10b 1
 R16
-R74
 R75
+R76
 !i113 0
 R19
 R20

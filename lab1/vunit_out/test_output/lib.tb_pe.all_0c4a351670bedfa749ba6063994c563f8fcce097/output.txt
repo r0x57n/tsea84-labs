@@ -1,5 +1,5 @@
 # vsim -modelsimini /home/raswa151/courses/tsea84-labs/lab1/vunit_out/modelsim/modelsim.ini -wlf /home/raswa151/courses/tsea84-labs/lab1/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_pe(tb) -coverage -L vunit_lib -L lib -g/tb_pe/logic_op=False -g/tb_pe/file_name=/home/raswa151/courses/tsea84-labs/lab1/tests.txt -g/tb_pe/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/raswa151/courses/tsea84-labs/lab1/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/,tb path : /home/raswa151/courses/tsea84-labs/lab1/,use_color : true" -g/tb_pe/pipeline=0 -g/tb_pe/wordlength=12 -g/tb_pe/shift_wordlength=3 
-# Start time: 18:39:28 on Sep 08,2024
+# Start time: 16:56:56 on Sep 09,2024
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  ModelSim SE-64 2021.3 Jul 13 2021 Linux 4.18.0-553.16.1.el8_10.x86_64
 # //
@@ -17,58 +17,41 @@
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /tb_pe/instantiate_pe/PE1
 #         40100 ps - check                -    PASS - Inputs: 27, 59. Op: add - Got 0000_0101_0110 (86).
-#         40100 ps - check                -    PASS - Overflow: '0' - Got 0.
-#         80100 ps - check                -    PASS - Inputs: 51, 61. Op: add - Got 0000_0111_0000 (112).
+#         40100 ps - check                -   ERROR - Overflow: '0' - Got 1. Expected 0.
+#         80100 ps - check                -    PASS - Inputs: 1, -1. Op: add - Got 0000_0000_0000 (0).
 #         80100 ps - check                -    PASS - Overflow: '0' - Got 0.
-#        120100 ps - check                -    PASS - Inputs: 42, 2. Op: add - Got 0000_0010_1100 (44).
+#        120100 ps - check                -    PASS - Inputs: 37, -5. Op: add - Got 0000_0010_0000 (32).
 #        120100 ps - check                -    PASS - Overflow: '0' - Got 0.
-#        160100 ps - check                -    PASS - Inputs: 54, 60. Op: add - Got 0000_0111_0010 (114).
+#        160100 ps - check                -    PASS - Inputs: -48, 25. Op: add - Got 1111_1110_1001 (-23).
 #        160100 ps - check                -    PASS - Overflow: '0' - Got 0.
-#        200100 ps - check                -    PASS - Inputs: -48, 25. Op: add - Got 1111_1110_1001 (-23).
-#        200100 ps - check                -    PASS - Overflow: '0' - Got 0.
+#        200100 ps - check                -    PASS - Inputs: 2047, 1. Op: add - Got 1000_0000_0000 (-2048).
+#        200100 ps - check                -    PASS - Overflow: '1' - Got 1.
 #        240100 ps - check                -    PASS - Inputs: 45, 2. Op: sub - Got 0000_0010_1011 (43).
 #        240100 ps - check                -    PASS - Overflow: '0' - Got 0.
-#        280100 ps - check                -    PASS - Inputs: -45, 2. Op: sub - Got 1111_1101_0001 (-47).
-#        280100 ps - check                -    PASS - Overflow: '0' - Got 0.
-#        320100 ps - check                -    PASS - Inputs: 40, 0. Op: mul3over4a - Got 0000_0001_1110 (30).
-#        320100 ps - check                -    PASS - Overflow: '0' - Got 0.
-#        360100 ps - check                -    PASS - Inputs: 40, 0. Op: shifta - Got 0000_0000_1010 (10).
-#        360100 ps - check                -    PASS - Overflow: '0' - Got 0.
-#        400100 ps - check                -    PASS - Inputs: -40, 0. Op: absa - Got 0000_0010_1000 (40).
-#        400100 ps - check                -    PASS - Overflow: '0' - Got 0.
-#        440100 ps - check                -    PASS - Inputs: -2048, 0. Op: absa - Got 1000_0000_0000 (-2048).
-#        440100 ps - check                -   ERROR - Overflow: '1' - Got 0. Expected 1.
-#        480100 ps - check                -   ERROR - Inputs: -2048, 0. Op: absa - Got 1000_0000_0000 (-2048). Expected 0111_1111_1111 (2047).
-#        480100 ps - check                -   ERROR - Overflow: '1' - Got 0. Expected 1.
-#        520100 ps - check                -   ERROR - Inputs: -2048, 0. Op: absa - Got 1100_0000_0000 (-1024). Expected 0100_0000_0000 (1024).
-#        520100 ps - check                -    PASS - Overflow: '0' - Got 0.
-#        560100 ps - check                -   ERROR - Inputs: -2048, -2048. Op: mul - Got 1000_0000_0000 (-2048). Expected 0111_1111_1111 (2047).
-#        560100 ps - check                -   ERROR - Overflow: '1' - Got 0. Expected 1.
-#        600100 ps - check                -   ERROR - Inputs: -2048, -2048. Op: mul - Got 1000_0000_0000 (-2048). Expected 0111_1111_1111 (2047).
-#        600100 ps - check                -   ERROR - Overflow: '1' - Got 0. Expected 1.
-# FAILURE - Logger check has 8 errors
-# ** Failure: Final log check failed
-#    Time: 600100 ps  Iteration: 8  Process: /tb_pe/main File: /home/raswa151/.local/lib/python3.11/site-packages/vunit/vhdl/core/src/core_pkg.vhd
-# Break in Subprogram core_failure at /home/raswa151/.local/lib/python3.11/site-packages/vunit/vhdl/core/src/core_pkg.vhd line 84
-# Stopped at /home/raswa151/.local/lib/python3.11/site-packages/vunit/vhdl/core/src/core_pkg.vhd line 84
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 24 (23 downto 0). Right is 26 (25 downto 0).
+#    Time: 280 ns  Iteration: 2  Process: /tb_pe/instantiate_pe/PE1/operations File: /home/raswa151/courses/tsea84-labs/lab1/PE.vhdl
+# Fatal error in Process operations at /home/raswa151/courses/tsea84-labs/lab1/PE.vhdl line 80
+# 
+# HDL call sequence:
+# Stopped at /home/raswa151/courses/tsea84-labs/lab1/PE.vhdl 80 Process operations
+# 
 # 
 # Test Run Failed!
 # 
 # Stack trace result from 'tb' command
-#  /home/raswa151/.local/lib/python3.11/site-packages/vunit/vhdl/core/src/core_pkg.vhd 84 return [address 0x7fefe45f3924] Subprogram core_failure
-# called from  /home/raswa151/.local/lib/python3.11/site-packages/vunit/vhdl/logging/src/logger_pkg-body.vhd 1249 return [address 0x7fefe49b5b8d] Subprogram final_log_check
-# called from  /home/raswa151/.local/lib/python3.11/site-packages/vunit/vhdl/run/src/run.vhd 114 return [address 0x7fefe4cb6924] Subprogram test_runner_cleanup
+#  /home/raswa151/courses/tsea84-labs/lab1/PE.vhdl 80 return [address 0x7fefe4cb4730] Process operations
 # 
 # 
 # Surrounding code from 'see' command
-#   79 :   begin
-#   80 :     if core_failure_is_mocked then
-#   81 :       set(core_failure_mock_state, core_failure_called_idx, 1);
-#   82 :       reallocate(to_string_ptr(get(core_failure_mock_state, core_failure_message_idx)), msg);
-#   83 :     else
-# ->84 :       report msg severity failure;
-#   85 :     end if;
-#   86 :   end;
-#   87 : 
-#   88 :   procedure check_core_failure(msg : string := "") is
+#   75 :         V <= '0';
+#   76 :       when nega =>
+#   77 :         before_shift <= -signeda;
+#   78 :         V <= '0';
+#   79 :       when mul3over4a => 
+# ->80 :         mul_tmp := 3*signeda;
+#   81 :         before_shift <= resize(shift_right(mul_tmp, 2), before_shift);
+#   82 : 
+#   83 :         V <= '0';
+#   84 :         for i in wordlength to 2*wordlength-2 loop
 # 
+Fatal error reported during simulation. Coverage save is disabled. Please look above output for the fatal error message(s).

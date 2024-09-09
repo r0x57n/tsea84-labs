@@ -1,0 +1,13 @@
+# do /home/raswa151/.local/lib/python3.11/site-packages/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/raswa151/courses/tsea84-labs/lab1/vunit_out/modelsim/modelsim.ini -wlf /home/raswa151/courses/tsea84-labs/lab1/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_pe(tb) -coverage -L vunit_lib -L lib -g/tb_pe/logic_op=False -g/tb_pe/file_name=/home/raswa151/courses/tsea84-labs/lab1/tests.txt -g/tb_pe/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/raswa151/courses/tsea84-labs/lab1/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/,tb path : /home/raswa151/courses/tsea84-labs/lab1/,use_color : true" -g/tb_pe/pipeline=0 -g/tb_pe/wordlength=12 -g/tb_pe/shift_wordlength=3 
+# Start time: 16:24:32 on Sep 09,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /home/raswa151/courses/tsea84-labs/lab1/PE.vhdl(114): (vopt-1272) Length of expected is 13; length of slice name is 12.
+# ** Note: Vopt Compiler exiting
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 2.
+# ** Warning: /home/raswa151/.local/lib/python3.11/site-packages/vunit/vhdl/string_ops/src/string_ops.vhd(488): (vopt-1083) Implicit array operator "=" always returns FALSE (left length 1 is not equal to right length 0).
+# ** Warning: /home/raswa151/.local/lib/python3.11/site-packages/vunit/vhdl/string_ops/src/string_ops.vhd(565): (vopt-1083) Implicit array operator "=" always returns FALSE (left length 1 is not equal to right length 0).
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=2.
+# Error loading design
+# End time: 16:24:34 on Sep 09,2024, Elapsed time: 0:00:02
+# Errors: 2, Warnings: 2
