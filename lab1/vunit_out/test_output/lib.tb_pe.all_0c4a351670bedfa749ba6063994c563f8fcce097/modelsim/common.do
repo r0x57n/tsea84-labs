@@ -43,11 +43,11 @@ proc _vunit_source_init_files_before_run {} {
 
 proc vunit_load {{vsim_extra_args ""}} {
     set vsim_failed [catch {
-        eval vsim ${vsim_extra_args} {-modelsimini /home/raswa151/courses/tsea84-labs/lab1/vunit_out/modelsim/modelsim.ini -wlf {/home/raswa151/courses/tsea84-labs/lab1/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_pe/wordlength=12 -g/tb_pe/shift_wordlength=3 -g/tb_pe/pipeline=0 -g/tb_pe/file_name=/home/raswa151/courses/tsea84-labs/lab1/tests.txt -g/tb_pe/logic_op=False -g/tb_pe/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/raswa151/courses/tsea84-labs/lab1/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/,tb path : /home/raswa151/courses/tsea84-labs/lab1/,use_color : true"} lib.tb_pe(tb) -coverage  -L vunit_lib -L lib}
+        eval vsim ${vsim_extra_args} {-modelsimini /home/raswa151/courses/tsea84-labs/lab1/vunit_out/modelsim/modelsim.ini -wlf {/home/raswa151/courses/tsea84-labs/lab1/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_pe/wordlength=12 -g/tb_pe/shift_wordlength=3 -g/tb_pe/pipeline=0 -g/tb_pe/file_name=/home/raswa151/courses/tsea84-labs/lab1/testing.txt -g/tb_pe/logic_op=False -g/tb_pe/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/raswa151/courses/tsea84-labs/lab1/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/,tb path : /home/raswa151/courses/tsea84-labs/lab1/,use_color : false"} lib.tb_pe(tb) -coverage  -L vunit_lib -L lib}
     }]
 
     if {${vsim_failed}} {
-       echo Command 'vsim ${vsim_extra_args} -modelsimini /home/raswa151/courses/tsea84-labs/lab1/vunit_out/modelsim/modelsim.ini -wlf {/home/raswa151/courses/tsea84-labs/lab1/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_pe/wordlength=12 -g/tb_pe/shift_wordlength=3 -g/tb_pe/pipeline=0 -g/tb_pe/file_name=/home/raswa151/courses/tsea84-labs/lab1/tests.txt -g/tb_pe/logic_op=False -g/tb_pe/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/raswa151/courses/tsea84-labs/lab1/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/,tb path : /home/raswa151/courses/tsea84-labs/lab1/,use_color : true"} lib.tb_pe(tb) -coverage  -L vunit_lib -L lib' failed
+       echo Command 'vsim ${vsim_extra_args} -modelsimini /home/raswa151/courses/tsea84-labs/lab1/vunit_out/modelsim/modelsim.ini -wlf {/home/raswa151/courses/tsea84-labs/lab1/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_pe/wordlength=12 -g/tb_pe/shift_wordlength=3 -g/tb_pe/pipeline=0 -g/tb_pe/file_name=/home/raswa151/courses/tsea84-labs/lab1/testing.txt -g/tb_pe/logic_op=False -g/tb_pe/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/raswa151/courses/tsea84-labs/lab1/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/,tb path : /home/raswa151/courses/tsea84-labs/lab1/,use_color : false"} lib.tb_pe(tb) -coverage  -L vunit_lib -L lib' failed
        echo Bad flag from vsim_extra_args?
        return true
     }
@@ -114,10 +114,10 @@ proc _vunit_sim_restart {} {
 }
 
 proc vunit_compile {} {
-    set cmd_show {/opt/liu/anaconda3/2024.02.1/bin/python3 -u ./run.py --compile}
+    set cmd_show {/opt/liu/anaconda3/2024.02.1/bin/python3 -u ./run.py --compile --gui}
     puts "Re-compiling using command ${cmd_show}"
 
-    set chan [open |[list {/opt/liu/anaconda3/2024.02.1/bin/python3} {-u} {-c} {import sys;import subprocess;exit(subprocess.call(['/opt/liu/anaconda3/2024.02.1/bin/python3', '-u', './run.py', '--compile'], cwd='/home/raswa151/courses/tsea84-labs/lab1', bufsize=0, universal_newlines=True, stdout=sys.stdout, stderr=sys.stdout))}] r]
+    set chan [open |[list {/opt/liu/anaconda3/2024.02.1/bin/python3} {-u} {-c} {import sys;import subprocess;exit(subprocess.call(['/opt/liu/anaconda3/2024.02.1/bin/python3', '-u', './run.py', '--compile', '--gui'], cwd='/home/raswa151/courses/tsea84-labs/lab1', bufsize=0, universal_newlines=True, stdout=sys.stdout, stderr=sys.stdout))}] r]
 
     while {[gets $chan line] >= 0} {
         puts $line
