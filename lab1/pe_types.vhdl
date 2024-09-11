@@ -4,7 +4,6 @@ use ieee.math_real.all;
 use ieee.std_logic_1164.all;
 
 package pe_types is
-  
   type op_type is (noop, add, sub, mul3over4a, mul7over8a, mul, shifta, nega, absa);  -- Operations
 
   constant OP_LENGTH : integer := integer(ceil(log2(real(op_type'pos(op_type'right)+1))));  -- Length of op_type

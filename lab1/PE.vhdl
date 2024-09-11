@@ -32,6 +32,7 @@ architecture start of PE is
   signal before_shift, before_saturation    : signed(wordlength downto 0) := (others => '0');   -- Result before shift / saturation
   signal unsigned_shift                     : unsigned(shift_wordlength-1 downto 0);            -- unsigned shift_val
   signal V                                  : std_logic;                                        -- Overflow flag
+  signal mulus_tempus                       : signed(2*wordlength+1 downto 0);
 begin
   unsigned_shift <= unsigned(shift_val);
 
@@ -41,10 +42,10 @@ begin
 
   operations: process (signeda, signedb, op, before_shift) is
     variable mul_tmp : signed(2*wordlength+1 downto 0);
-  begin  -- process operations
+    variable sign_check : signed(2*wordlength+1 downto wordlength);
+  begin
     V <= '0';
 
-    -- type op_type is (noop, add, sub, mul3over4a, mul7over8a, mul, shifta, nega, absa);
     case op is
       when noop => null;
       when add =>
@@ -63,20 +64,32 @@ begin
         end if;
       when mul3over4a =>
         mul_tmp := 3*signeda;
-        before_shift <= resize(shift_right(mul_tmp, 2), before_shift);
-
-        if (mul_tmp(2*wordlength downto 2*wordlength-1) /= (mul_tmp(2*wordlength-2) & mul_tmp(2*wordlength-2))) then
-            V <= '1';
-        end if;
+        before_shift <= resize(shift_right(mul_tmp, 2), before_shift'length);
       when mul7over8a =>
         mul_tmp := 7*signeda;
-        before_shift <= resize(shift_right(mul_tmp, 3), before_shift);
+        before_shift <= resize(shift_right(mul_tmp, 3), before_shift'length);
       when mul =>
         mul_tmp := signeda * signedb;
+        before_shift <= resize(mul_tmp, before_shift'length);
+
+        if (mul_tmp(SIGN) = '0') then
+            sign_check := (others => '0');
+            if (mul_tmp(2*wordlength downto wordlength) /= sign_check) then
+                V <= '1';
+            end if;
+        else
+            sign_check := (others => '1');
+            if (mul_tmp(2*wordlength downto wordlength) /= sign_check) then
+                V <= '1';
+            end if;
+        end if;
       when shifta =>
         before_shift <= signeda;
       when nega =>
         before_shift <= -signeda;
+        if (signeda = -2048) then
+            V <= '1';
+        end if;
       when absa =>
         if signeda >= 0 then
             before_shift <= signeda;
@@ -96,8 +109,21 @@ begin
     before_saturation <= shift_right(before_shift, to_integer(unsigned_shift));
   end process shifting;
 
-  signedoutput <= before_saturation(wordlength-1 downto 0);
-  overflow     <= V;
+  saturation: process (before_saturation, sat) is
+    constant MAX_VALUE : signed(wordlength downto 0) := to_signed(2047, before_saturation'length);
+    constant MIN_VALUE : signed(wordlength downto 0) := to_signed(-2048, before_saturation'length);
+  begin
+      signedoutput <= before_saturation(wordlength-1 downto 0);
 
+      if sat = '1' then
+        if before_saturation > signed(MAX_VALUE) then
+          signedoutput <= resize(MAX_VALUE, signedoutput'length);
+        elsif before_saturation < signed(MIN_VALUE) then
+          signedoutput <= resize(MIN_VALUE, signedoutput'length);
+        end if;
+      end if;
+  end process saturation;
+
+  overflow <= V;
   result <= std_logic_vector(signedoutput);
 end architecture start;

@@ -127,7 +127,7 @@ begin
       generic map(
         wordlength       => wordlength,
         shift_wordlength => shift_wordlength
-        /*OP_length => OP_LENGTH*/
+        --OP_length => OP_LENGTH
         )
       port map(
         inputa    => data1.inputa,
