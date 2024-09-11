@@ -1,0 +1,2 @@
+var g_data = {"data":[{"n":"work.PE(start)","id":41,"zf":1,"tc":96.21,"s":97.43,"b":95.00},{"n":"work.pe_types","id":1,"zf":1,"tc":0.00,"s":0.00},{"n":"work.tb_pe(tb)","id":40,"zf":1,"tc":92.85,"s":100.00,"b":85.71}]};
+processDuData(g_data);
