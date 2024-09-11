@@ -28,9 +28,9 @@ lib.add_source_files(join(root, "tb_pe.vhdl"))
 
 
 # Set flags for coverage
-# lib.set_compile_option("modelsim.vcom_flags", ["+cover=bs"])
-# lib.set_compile_option("modelsim.vlog_flags", ["+cover=bs"])
-# lib.set_sim_option("enable_coverage", True)
+lib.set_compile_option("modelsim.vcom_flags", ["+cover=bs"])
+lib.set_compile_option("modelsim.vlog_flags", ["+cover=bs"])
+lib.set_sim_option("enable_coverage", True)
 
 # Load do-file that set up waveforms
 lib.set_sim_option("modelsim.init_file.gui", "pe_waves_sim.do")
@@ -45,9 +45,12 @@ lib.set_generic("file_name", abspath("tests.txt"))
 # True: use binary (for Verilog and synthesized)
 lib.set_generic("logic_op", False)
 
-# Coverage callback
-#def post_run(results):
-#    results.merge_coverage(file_name="coverage_data")
-#vu.main(post_run=post_run)
 
-vu.main()
+# Coverage callback
+def post_run(results):
+    results.merge_coverage(file_name="coverage_data")
+
+
+vu.main(post_run=post_run)
+
+# vu.main()
