@@ -28,9 +28,9 @@ lib.add_source_files(join(root, "tb_pe.vhdl"))
 
 
 # Set flags for coverage
-lib.set_compile_option("modelsim.vcom_flags", ["+cover=bs"])
-lib.set_compile_option("modelsim.vlog_flags", ["+cover=bs"])
-lib.set_sim_option("enable_coverage", True)
+#lib.set_compile_option("modelsim.vcom_flags", ["+cover=bs"])
+#lib.set_compile_option("modelsim.vlog_flags", ["+cover=bs"])
+#lib.set_sim_option("enable_coverage", True)
 
 # Load do-file that set up waveforms
 lib.set_sim_option("modelsim.init_file.gui", "pe_waves_sim.do")
@@ -38,7 +38,7 @@ lib.set_sim_option("modelsim.init_file.gui", "pe_waves_sim.do")
 # Set generics
 lib.set_generic("wordlength", 12)
 lib.set_generic("shift_wordlength", 3)
-lib.set_generic("pipeline", 0)
+lib.set_generic("pipeline", 2)
 lib.set_generic("file_name", abspath("tests.txt"))
 # lib.set_generic("file_name", abspath("testing.txt"))
 # Set if logic_op is an enum or binary
@@ -48,10 +48,10 @@ lib.set_generic("logic_op", False)
 
 
 # Coverage callback
-def post_run(results):
-    results.merge_coverage(file_name="coverage_data")
+#def post_run(results):
+#    results.merge_coverage(file_name="coverage_data")
+#
+#
+#vu.main(post_run=post_run)
 
-
-vu.main(post_run=post_run)
-
-# vu.main()
+vu.main()
