@@ -65,7 +65,7 @@ begin
       when nega =>
         before_shift <= -signeda;
       when absa =>
-        if signeda >= 0 then
+        if signeda(SIGN) = '0' then
             before_shift <= signeda;
         else
             before_shift <= -signeda;

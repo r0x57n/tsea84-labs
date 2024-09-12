@@ -1,0 +1,113 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.3 2021.07, Jul 13 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/raswa151/courses/tsea84-labs/lab1
+T_opt
+!s110 1725812301
+V=D?nzf@ofX;CGO:KZ;zZW1
+04 2 5 work pe start 1
+=1-001b213b2bbc-66ddce4c-d4ebb-1e991
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;2021.3;73
+Epe
+Z1 w1725607378
+Z2 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z3 DPx4 work 8 pe_types 0 22 ?;R0@47<7HNSY?hWO<Bd52
+Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+Z7 8PE.vhdl
+Z8 FPE.vhdl
+l0
+L11 1
+Vf8M5ME6JB^LWSNSG>IC?13
+!s100 g<WkHEbIzW8z?n[BKW;d`3
+Z9 OL;C;2021.3;73
+33
+Z10 !s110 1725812276
+!i10b 1
+Z11 !s108 1725812276.000000
+Z12 !s90 PE.vhdl|-2008|
+Z13 !s107 PE.vhdl|
+!i113 0
+Z14 o-2008
+Z15 tExplicit 1 CvgOpt 0
+Astart
+R2
+R3
+R4
+R5
+R6
+DEx4 work 2 pe 0 22 f8M5ME6JB^LWSNSG>IC?13
+!i122 2
+l39
+L28 57
+Vjlk<eg78Dbb9>gF3UY4Vo3
+!s100 P1P>T5GO:HA?>C4SU1YGN2
+R9
+33
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Ppe_types
+R2
+R6
+R5
+R4
+!i122 0
+R1
+R0
+Z16 8pe_types.vhdl
+Z17 Fpe_types.vhdl
+l0
+L6 1
+V?;R0@47<7HNSY?hWO<Bd52
+!s100 bnY9d<7Y[cmYWXa?jLm8M3
+R9
+32
+b1
+Z18 !s110 1725812270
+!i10b 1
+Z19 !s108 1725812270.000000
+Z20 !s90 pe_types.vhdl|
+Z21 !s107 pe_types.vhdl|
+!i113 0
+R15
+Bbody
+R3
+R2
+R6
+R5
+R4
+!i122 0
+l0
+L15 1
+Vh]e`eS<bP?AjRCBj]hJjn3
+!s100 WI4>Igj;J9kB[kafQNHQG1
+R9
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R15

@@ -1,0 +1,98 @@
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+        [22;96;49m40100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 27, 59. Op: noop - Got 0000_0000_0000 (0).
+        [22;96;49m40100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+        [22;96;49m80100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 27, 59. Op: add - Got 0000_0101_0110 (86).
+        [22;96;49m80100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+       [22;96;49m120100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 1, -1. Op: add - Got 0000_0000_0000 (0).
+       [22;96;49m120100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+       [22;96;49m160100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 37, -5. Op: add - Got 0000_0010_0000 (32).
+       [22;96;49m160100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+       [22;96;49m200100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -48, 25. Op: add - Got 1111_1110_1001 (-23).
+       [22;96;49m200100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+       [22;96;49m240100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 2047, 1. Op: add - Got 1000_0000_0000 (-2048).
+       [22;96;49m240100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '1' - Got 1.
+       [22;96;49m280100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 2000, 50. Op: add - Got 0111_1111_1111 (2047).
+       [22;96;49m280100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '1' - Got 1.
+       [22;96;49m320100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -2000, -50. Op: add - Got 1000_0000_0000 (-2048).
+       [22;96;49m320100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '1' - Got 1.
+       [22;96;49m360100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 2000, 50. Op: add - Got 0100_0000_0001 (1025).
+       [22;96;49m360100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+       [22;96;49m400100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 50, 20. Op: sub - Got 0000_0001_1110 (30).
+       [22;96;49m400100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+       [22;96;49m440100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 1, -1. Op: sub - Got 0000_0000_0010 (2).
+       [22;96;49m440100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+       [22;96;49m480100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 1, 1. Op: sub - Got 0000_0000_0000 (0).
+       [22;96;49m480100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+../../src/ieee2008/numeric_std-body.vhdl:3117:7:@520ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+       [22;96;49m520100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -2047, 1. Op: sub - Got 1000_0000_0000 (-2048).
+       [22;96;49m520100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+       [22;96;49m560100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -2047, 5. Op: sub - Got 0111_1111_1100 (2044).
+       [22;96;49m560100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '1' - Got 1.
+../../src/ieee2008/numeric_std-body.vhdl:3117:7:@600ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+       [22;96;49m600100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 2047, 0. Op: sub - Got 0111_1111_1111 (2047).
+       [22;96;49m600100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+       [22;96;49m640100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 2047, -5. Op: sub - Got 1000_0000_0100 (-2044).
+       [22;96;49m640100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '1' - Got 1.
+       [22;96;49m680100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 45, 2. Op: sub - Got 0000_0010_1011 (43).
+       [22;96;49m680100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+       [22;96;49m720100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -45, 2. Op: sub - Got 1111_1101_0001 (-47).
+       [22;96;49m720100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+       [22;96;49m760100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 2000, -50. Op: sub - Got 0111_1111_1111 (2047).
+       [22;96;49m760100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '1' - Got 1.
+       [22;96;49m800100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -2000, 50. Op: sub - Got 1000_0000_0000 (-2048).
+       [22;96;49m800100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '1' - Got 1.
+       [22;96;49m840100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 2000, -50. Op: sub - Got 0100_0000_0001 (1025).
+       [22;96;49m840100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+       [22;96;49m880100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 1000, 0. Op: mul3over4a - Got 0010_1110_1110 (750).
+       [22;96;49m880100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+       [22;96;49m920100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 2047, 0. Op: mul3over4a - Got 0101_1111_1111 (1535).
+       [22;96;49m920100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+       [22;96;49m960100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -2048, 0. Op: mul3over4a - Got 1010_0000_0000 (-1536).
+       [22;96;49m960100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+      [22;96;49m1000100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 1000, 0. Op: mul7over8a - Got 0011_0110_1011 (875).
+      [22;96;49m1000100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+      [22;96;49m1040100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 2047, 0. Op: mul7over8a - Got 0110_1111_1111 (1791).
+      [22;96;49m1040100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+      [22;96;49m1080100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -2048, 0. Op: mul7over8a - Got 1001_0000_0000 (-1792).
+      [22;96;49m1080100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+      [22;96;49m1120100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 3, 23. Op: mul - Got 0000_0000_0000 (0).
+      [22;96;49m1120100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+      [22;96;49m1160100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 1024, 1024. Op: mul - Got 0010_0000_0000 (512).
+      [22;96;49m1160100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+      [22;96;49m1200100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 2047, 2. Op: mul - Got 0000_0000_0001 (1).
+      [22;96;49m1200100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+      [22;96;49m1240100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -2048, 2. Op: mul - Got 1111_1111_1110 (-2).
+      [22;96;49m1240100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+      [22;96;49m1280100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 412, 3. Op: mul - Got 0000_0000_0000 (0).
+      [22;96;49m1280100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+      [22;96;49m1320100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 2047, 2. Op: mul - Got 0000_0000_0001 (1).
+      [22;96;49m1320100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+      [22;96;49m1360100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -2048, 2. Op: mul - Got 1111_1111_1110 (-2).
+      [22;96;49m1360100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+      [22;96;49m1400100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 40, 0. Op: shifta - Got 0000_0000_1010 (10).
+      [22;96;49m1400100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+      [22;96;49m1440100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -2048, 0. Op: shifta - Got 1110_0000_0000 (-512).
+      [22;96;49m1440100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+      [22;96;49m1480100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 100, 0. Op: nega - Got 1111_1001_1100 (-100).
+      [22;96;49m1480100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+      [22;96;49m1520100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 2047, 0. Op: nega - Got 1000_0000_0001 (-2047).
+      [22;96;49m1520100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+      [22;96;49m1560100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -2048, 0. Op: nega - Got 1000_0000_0000 (-2048).
+      [22;96;49m1560100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '1' - Got 1.
+      [22;96;49m1600100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: 100, 0. Op: absa - Got 0000_0110_0100 (100).
+      [22;96;49m1600100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+      [22;96;49m1640100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -100, 0. Op: absa - Got 0000_0110_0100 (100).
+      [22;96;49m1640100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+      [22;96;49m1680100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -2048, 0. Op: absa - Got 1000_0000_0000 (-2048).
+      [22;96;49m1680100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '1' - Got 1.
+      [22;96;49m1720100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -2048, 0. Op: absa - Got 1000_0000_0000 (-2048).
+      [22;96;49m1720100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '1' - Got 1.
+      [22;96;49m1760100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -2048, 0. Op: absa - Got 0111_1111_1111 (2047).
+      [22;96;49m1760100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '1' - Got 1.
+      [22;96;49m1800100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -2048, 0. Op: absa - Got 0100_0000_0000 (1024).
+      [22;96;49m1800100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '0' - Got 0.
+      [22;96;49m1840100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -2048, -2048. Op: mul - Got 0111_1111_1111 (2047).
+      [22;96;49m1840100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '1' - Got 1.
+      [22;96;49m1880100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Inputs: -2048, -2048. Op: mul - Got 0111_1111_1111 (2047).
+      [22;96;49m1880100000 fs[0m - [1;37;49mcheck[0m                -    [1;32;49mPASS[0m - Overflow: '1' - Got 1.
+simulation stopped @1880100ps with status 0
