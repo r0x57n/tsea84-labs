@@ -123,7 +123,7 @@ begin
 
   instantiate_pe :
   if logic_op generate
-    PE1 : entity work.PE
+    PE1 : entity work.PE_bin
       generic map(
         wordlength       => wordlength,
         shift_wordlength => shift_wordlength
@@ -141,7 +141,7 @@ begin
         );
   else
     generate
-      PE1 : entity work.PE
+      PE1 : entity work.PE_bin
         generic map(
           wordlength       => wordlength,
           shift_wordlength => shift_wordlength

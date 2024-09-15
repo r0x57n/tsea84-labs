@@ -1,0 +1,12 @@
+
+State Machine - |PE|reg_op
+Name reg_op.absa reg_op.nega reg_op.shifta reg_op.mul reg_op.mul7over8a reg_op.mul3over4a reg_op.sub reg_op.add reg_op.noop 
+reg_op.noop 0 0 0 0 0 0 0 0 0 
+reg_op.add 0 0 0 0 0 0 0 1 1 
+reg_op.sub 0 0 0 0 0 0 1 0 1 
+reg_op.mul3over4a 0 0 0 0 0 1 0 0 1 
+reg_op.mul7over8a 0 0 0 0 1 0 0 0 1 
+reg_op.mul 0 0 0 1 0 0 0 0 1 
+reg_op.shifta 0 0 1 0 0 0 0 0 1 
+reg_op.nega 0 1 0 0 0 0 0 0 1 
+reg_op.absa 1 0 0 0 0 0 0 0 1 

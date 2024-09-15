@@ -15,16 +15,16 @@ lib = vu.add_library("lib")
 
 # Add VHDL files for the standard design
 lib.add_source_files(join(root, "pe_types.vhdl"))
-lib.add_source_files(join(root, "PE.vhdl"))
+lib.add_source_files(join(root, "PE_bin.vhdl"))
 lib.add_source_files(join(root, "tb_pe.vhdl"))
 
 # Verilog file
 # lib.add_source_files(join(root, "PE_bin.v"))
 
 # Add files required for the synthesized version
-# lib.add_source_files(join(root, "PE.vo"))
-# lib.add_source_files("/courses/TSEA84/src/verilog/src/altera_primitives.v")
-# lib.add_source_files("/courses/TSEA84/src/verilog/src/cycloneive_atoms.v")
+lib.add_source_files(join(root, "PE.vo"))
+lib.add_source_files("/courses/TSEA84/src/verilog/src/altera_primitives.v")
+lib.add_source_files("/courses/TSEA84/src/verilog/src/cycloneive_atoms.v")
 
 
 # Set flags for coverage
