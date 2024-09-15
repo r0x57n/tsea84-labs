@@ -30,7 +30,7 @@ architecture start of PE is
   constant MUL_SIGN                         : integer := 2*wordlength;
   signal signedoutput                       : signed(wordlength-1 downto 0);                    -- signed output
   signal mul_tmp                            : signed(2*wordlength+1 downto 0);                  -- temporary mul result
-  signal before_shift, before_saturation    : signed(wordlength downto 0) := (others => '0');   -- Result before shift / saturation
+  signal before_shift, before_saturation    : signed(wordlength downto 0);                      -- Result before shift / saturation
   signal V                                  : std_logic;                                        -- Overflow flag
 
    -- Register signals for inputs
@@ -57,8 +57,9 @@ begin
   operations: process (reg_op, reg_inputa, reg_inputb, mul_tmp) is
       variable int_mul_tmp : signed(2*wordlength+1 downto 0);
   begin
+     mul_tmp <= (others => '0');
+
     case reg_op is
-      when noop => null;
       when add =>
         before_shift <= reg_inputa + reg_inputb;
       when sub =>
@@ -83,7 +84,8 @@ begin
         else
             before_shift <= -reg_inputa;
         end if;
-      when others => null;
+      when others => 
+          before_shift <= (others => '0');
     end case;
   end process;
 
@@ -129,7 +131,7 @@ begin
     end case;
   end process overflow_check;
 
-  saturation: process (before_saturation, reg_sat, reg_op, V) is
+  saturation: process (before_saturation, reg_sat, reg_op, V, mul_tmp) is
     constant MAX_VALUE : signed(wordlength downto 0) := to_signed(2047, before_saturation'length);
     constant MIN_VALUE : signed(wordlength downto 0) := to_signed(-2048, before_saturation'length);
   begin
