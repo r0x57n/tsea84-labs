@@ -55,15 +55,20 @@ begin
   end process;
 
   operations: process (reg_op, reg_inputa, reg_inputb, mul_tmp) is
-      variable int_mul_tmp : signed(2*wordlength+1 downto 0);
+      variable tmp_mul_tmp : signed(2*wordlength+1 downto 0);
+      variable tmp_inputb : signed(wordlength downto 0);
   begin
      mul_tmp <= (others => '0');
 
+    if reg_op = sub then
+      tmp_inputb := -reg_inputb;
+    else
+      tmp_inputb := reg_inputb;
+    end if;
+
     case reg_op is
-      when add =>
-        before_shift <= reg_inputa + reg_inputb;
-      when sub =>
-        before_shift <= reg_inputa - reg_inputb;
+      when add | sub =>
+        before_shift <= reg_inputa + tmp_inputb;
       when mul3over4a =>
         mul_tmp <= resize(shift_right(3*reg_inputa, 2), mul_tmp'length);
         before_shift <= resize(mul_tmp, before_shift'length);
@@ -71,8 +76,8 @@ begin
         mul_tmp <= resize(shift_right(7*reg_inputa, 3), mul_tmp'length);
         before_shift <= resize(mul_tmp, before_shift'length);
       when mul =>
-        int_mul_tmp := reg_inputa*reg_inputb;
-        mul_tmp <= resize(int_mul_tmp(24 downto 11), mul_tmp'length);
+        tmp_mul_tmp := reg_inputa*reg_inputb;
+        mul_tmp <= resize(tmp_mul_tmp(24 downto 11), mul_tmp'length);
         before_shift <= resize(mul_tmp, before_shift'length);
       when shifta =>
         before_shift <= reg_inputa;

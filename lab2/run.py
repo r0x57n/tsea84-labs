@@ -22,9 +22,9 @@ lib.add_source_files(join(root, "tb_pe.vhdl"))
 # lib.add_source_files(join(root, "PE_bin.v"))
 
 # Add files required for the synthesized version
-lib.add_source_files(join(root, "PE.vo"))
-lib.add_source_files("/courses/TSEA84/src/verilog/src/altera_primitives.v")
-lib.add_source_files("/courses/TSEA84/src/verilog/src/cycloneive_atoms.v")
+# lib.add_source_files(join(root, "PE.vo"))
+# lib.add_source_files("/courses/TSEA84/src/verilog/src/altera_primitives.v")
+# lib.add_source_files("/courses/TSEA84/src/verilog/src/cycloneive_atoms.v")
 
 
 # Set flags for coverage

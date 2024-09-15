@@ -1,20 +1,22 @@
 [*]
 [*] GTKWave Analyzer v3.3.120 (w)1999-2024 BSI
-[*] Wed Sep 11 12:30:07 2024
+[*] Sun Sep 15 19:47:29 2024
 [*]
-[dumpfile] "(null)"
-[savefile] "/home/re/dev/school/tsea84-local/tsea84-labs/lab1/test.gtkw"
+[dumpfile] "/home/re/dev/school/tsea84-local/tsea84-labs/lab2/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/ghdl/wave.ghw"
+[dumpfile_mtime] "Sun Sep 15 19:46:49 2024"
+[dumpfile_size] 3862
+[savefile] "/home/re/dev/school/tsea84-local/tsea84-labs/lab2/test.gtkw"
 [timestart] 0
-[size] 1070 904
-[pos] 959 516
-*0.000000 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[size] 1910 981
+[pos] -1 -1
+*-25.753225 102000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
 [treeopen] top.run_pkg.
 [treeopen] top.tb_pe.
 [treeopen] top.tb_pe.instantiate_pe.
 [treeopen] top.tb_pe.instantiate_pe.pe1.
 [sst_width] 273
-[signals_width] 214
+[signals_width] 390
 [sst_expanded] 1
 [sst_vpaned_height] 270
 @28
@@ -36,7 +38,7 @@ top.tb_pe.instantiate_pe.pe1.inputa[3]
 top.tb_pe.instantiate_pe.pe1.inputa[2]
 top.tb_pe.instantiate_pe.pe1.inputa[1]
 top.tb_pe.instantiate_pe.pe1.inputa[0]
-@1401600
+@1401200
 -group_end
 @c00420
 #{top.tb_pe.instantiate_pe.pe1.inputb[11:0]} top.tb_pe.instantiate_pe.pe1.inputb[11] top.tb_pe.instantiate_pe.pe1.inputb[10] top.tb_pe.instantiate_pe.pe1.inputb[9] top.tb_pe.instantiate_pe.pe1.inputb[8] top.tb_pe.instantiate_pe.pe1.inputb[7] top.tb_pe.instantiate_pe.pe1.inputb[6] top.tb_pe.instantiate_pe.pe1.inputb[5] top.tb_pe.instantiate_pe.pe1.inputb[4] top.tb_pe.instantiate_pe.pe1.inputb[3] top.tb_pe.instantiate_pe.pe1.inputb[2] top.tb_pe.instantiate_pe.pe1.inputb[1] top.tb_pe.instantiate_pe.pe1.inputb[0]
@@ -53,40 +55,30 @@ top.tb_pe.instantiate_pe.pe1.inputb[3]
 top.tb_pe.instantiate_pe.pe1.inputb[2]
 top.tb_pe.instantiate_pe.pe1.inputb[1]
 top.tb_pe.instantiate_pe.pe1.inputb[0]
-@1401600
--group_end
-@c00420
-#{top.tb_pe.instantiate_pe.pe1.signeda[12:0]} top.tb_pe.instantiate_pe.pe1.signeda[12] top.tb_pe.instantiate_pe.pe1.signeda[11] top.tb_pe.instantiate_pe.pe1.signeda[10] top.tb_pe.instantiate_pe.pe1.signeda[9] top.tb_pe.instantiate_pe.pe1.signeda[8] top.tb_pe.instantiate_pe.pe1.signeda[7] top.tb_pe.instantiate_pe.pe1.signeda[6] top.tb_pe.instantiate_pe.pe1.signeda[5] top.tb_pe.instantiate_pe.pe1.signeda[4] top.tb_pe.instantiate_pe.pe1.signeda[3] top.tb_pe.instantiate_pe.pe1.signeda[2] top.tb_pe.instantiate_pe.pe1.signeda[1] top.tb_pe.instantiate_pe.pe1.signeda[0]
-@28
-top.tb_pe.instantiate_pe.pe1.signeda[12]
-top.tb_pe.instantiate_pe.pe1.signeda[11]
-top.tb_pe.instantiate_pe.pe1.signeda[10]
-top.tb_pe.instantiate_pe.pe1.signeda[9]
-top.tb_pe.instantiate_pe.pe1.signeda[8]
-top.tb_pe.instantiate_pe.pe1.signeda[7]
-top.tb_pe.instantiate_pe.pe1.signeda[6]
-top.tb_pe.instantiate_pe.pe1.signeda[5]
-top.tb_pe.instantiate_pe.pe1.signeda[4]
-top.tb_pe.instantiate_pe.pe1.signeda[3]
-top.tb_pe.instantiate_pe.pe1.signeda[2]
-top.tb_pe.instantiate_pe.pe1.signeda[1]
-top.tb_pe.instantiate_pe.pe1.signeda[0]
-@1401600
+@1401200
 -group_end
 @420
-#{top.tb_pe.instantiate_pe.pe1.signedb[12:0]} top.tb_pe.instantiate_pe.pe1.signedb[12] top.tb_pe.instantiate_pe.pe1.signedb[11] top.tb_pe.instantiate_pe.pe1.signedb[10] top.tb_pe.instantiate_pe.pe1.signedb[9] top.tb_pe.instantiate_pe.pe1.signedb[8] top.tb_pe.instantiate_pe.pe1.signedb[7] top.tb_pe.instantiate_pe.pe1.signedb[6] top.tb_pe.instantiate_pe.pe1.signedb[5] top.tb_pe.instantiate_pe.pe1.signedb[4] top.tb_pe.instantiate_pe.pe1.signedb[3] top.tb_pe.instantiate_pe.pe1.signedb[2] top.tb_pe.instantiate_pe.pe1.signedb[1] top.tb_pe.instantiate_pe.pe1.signedb[0]
+#{top.tb_pe.instantiate_pe.pe1.reg_inputa[12:0]} top.tb_pe.instantiate_pe.pe1.reg_inputa[12] top.tb_pe.instantiate_pe.pe1.reg_inputa[11] top.tb_pe.instantiate_pe.pe1.reg_inputa[10] top.tb_pe.instantiate_pe.pe1.reg_inputa[9] top.tb_pe.instantiate_pe.pe1.reg_inputa[8] top.tb_pe.instantiate_pe.pe1.reg_inputa[7] top.tb_pe.instantiate_pe.pe1.reg_inputa[6] top.tb_pe.instantiate_pe.pe1.reg_inputa[5] top.tb_pe.instantiate_pe.pe1.reg_inputa[4] top.tb_pe.instantiate_pe.pe1.reg_inputa[3] top.tb_pe.instantiate_pe.pe1.reg_inputa[2] top.tb_pe.instantiate_pe.pe1.reg_inputa[1] top.tb_pe.instantiate_pe.pe1.reg_inputa[0]
+#{top.tb_pe.instantiate_pe.pe1.reg_inputb[12:0]} top.tb_pe.instantiate_pe.pe1.reg_inputb[12] top.tb_pe.instantiate_pe.pe1.reg_inputb[11] top.tb_pe.instantiate_pe.pe1.reg_inputb[10] top.tb_pe.instantiate_pe.pe1.reg_inputb[9] top.tb_pe.instantiate_pe.pe1.reg_inputb[8] top.tb_pe.instantiate_pe.pe1.reg_inputb[7] top.tb_pe.instantiate_pe.pe1.reg_inputb[6] top.tb_pe.instantiate_pe.pe1.reg_inputb[5] top.tb_pe.instantiate_pe.pe1.reg_inputb[4] top.tb_pe.instantiate_pe.pe1.reg_inputb[3] top.tb_pe.instantiate_pe.pe1.reg_inputb[2] top.tb_pe.instantiate_pe.pe1.reg_inputb[1] top.tb_pe.instantiate_pe.pe1.reg_inputb[0]
+@c00200
+-top.tb_pe.instantiate_pe.pe1.signeda[12:0]
+@1401200
+-group_end
 @200
 -
 @28
 top.tb_pe.instantiate_pe.pe1.op
+@420
+top.tb_pe.instantiate_pe.pe1.reg_op
+@28
 top.tb_pe.instantiate_pe.pe1.sat
+top.tb_pe.instantiate_pe.pe1.reg_sat
 #{top.tb_pe.instantiate_pe.pe1.shift_val[2:0]} top.tb_pe.instantiate_pe.pe1.shift_val[2] top.tb_pe.instantiate_pe.pe1.shift_val[1] top.tb_pe.instantiate_pe.pe1.shift_val[0]
-#{top.tb_pe.instantiate_pe.pe1.unsigned_shift[2:0]} top.tb_pe.instantiate_pe.pe1.unsigned_shift[2] top.tb_pe.instantiate_pe.pe1.unsigned_shift[1] top.tb_pe.instantiate_pe.pe1.unsigned_shift[0]
+#{top.tb_pe.instantiate_pe.pe1.reg_shift_val[2:0]} top.tb_pe.instantiate_pe.pe1.reg_shift_val[2] top.tb_pe.instantiate_pe.pe1.reg_shift_val[1] top.tb_pe.instantiate_pe.pe1.reg_shift_val[0]
 @20000
 -
-@22
+@420
 #{top.tb_pe.instantiate_pe.pe1.mul_tmp[25:0]} top.tb_pe.instantiate_pe.pe1.mul_tmp[25] top.tb_pe.instantiate_pe.pe1.mul_tmp[24] top.tb_pe.instantiate_pe.pe1.mul_tmp[23] top.tb_pe.instantiate_pe.pe1.mul_tmp[22] top.tb_pe.instantiate_pe.pe1.mul_tmp[21] top.tb_pe.instantiate_pe.pe1.mul_tmp[20] top.tb_pe.instantiate_pe.pe1.mul_tmp[19] top.tb_pe.instantiate_pe.pe1.mul_tmp[18] top.tb_pe.instantiate_pe.pe1.mul_tmp[17] top.tb_pe.instantiate_pe.pe1.mul_tmp[16] top.tb_pe.instantiate_pe.pe1.mul_tmp[15] top.tb_pe.instantiate_pe.pe1.mul_tmp[14] top.tb_pe.instantiate_pe.pe1.mul_tmp[13] top.tb_pe.instantiate_pe.pe1.mul_tmp[12] top.tb_pe.instantiate_pe.pe1.mul_tmp[11] top.tb_pe.instantiate_pe.pe1.mul_tmp[10] top.tb_pe.instantiate_pe.pe1.mul_tmp[9] top.tb_pe.instantiate_pe.pe1.mul_tmp[8] top.tb_pe.instantiate_pe.pe1.mul_tmp[7] top.tb_pe.instantiate_pe.pe1.mul_tmp[6] top.tb_pe.instantiate_pe.pe1.mul_tmp[5] top.tb_pe.instantiate_pe.pe1.mul_tmp[4] top.tb_pe.instantiate_pe.pe1.mul_tmp[3] top.tb_pe.instantiate_pe.pe1.mul_tmp[2] top.tb_pe.instantiate_pe.pe1.mul_tmp[1] top.tb_pe.instantiate_pe.pe1.mul_tmp[0]
-@421
 #{top.tb_pe.instantiate_pe.pe1.before_shift[12:0]} top.tb_pe.instantiate_pe.pe1.before_shift[12] top.tb_pe.instantiate_pe.pe1.before_shift[11] top.tb_pe.instantiate_pe.pe1.before_shift[10] top.tb_pe.instantiate_pe.pe1.before_shift[9] top.tb_pe.instantiate_pe.pe1.before_shift[8] top.tb_pe.instantiate_pe.pe1.before_shift[7] top.tb_pe.instantiate_pe.pe1.before_shift[6] top.tb_pe.instantiate_pe.pe1.before_shift[5] top.tb_pe.instantiate_pe.pe1.before_shift[4] top.tb_pe.instantiate_pe.pe1.before_shift[3] top.tb_pe.instantiate_pe.pe1.before_shift[2] top.tb_pe.instantiate_pe.pe1.before_shift[1] top.tb_pe.instantiate_pe.pe1.before_shift[0]
 @c00420
 #{top.tb_pe.instantiate_pe.pe1.before_saturation[12:0]} top.tb_pe.instantiate_pe.pe1.before_saturation[12] top.tb_pe.instantiate_pe.pe1.before_saturation[11] top.tb_pe.instantiate_pe.pe1.before_saturation[10] top.tb_pe.instantiate_pe.pe1.before_saturation[9] top.tb_pe.instantiate_pe.pe1.before_saturation[8] top.tb_pe.instantiate_pe.pe1.before_saturation[7] top.tb_pe.instantiate_pe.pe1.before_saturation[6] top.tb_pe.instantiate_pe.pe1.before_saturation[5] top.tb_pe.instantiate_pe.pe1.before_saturation[4] top.tb_pe.instantiate_pe.pe1.before_saturation[3] top.tb_pe.instantiate_pe.pe1.before_saturation[2] top.tb_pe.instantiate_pe.pe1.before_saturation[1] top.tb_pe.instantiate_pe.pe1.before_saturation[0]
@@ -104,13 +96,17 @@ top.tb_pe.instantiate_pe.pe1.before_saturation[3]
 top.tb_pe.instantiate_pe.pe1.before_saturation[2]
 top.tb_pe.instantiate_pe.pe1.before_saturation[1]
 top.tb_pe.instantiate_pe.pe1.before_saturation[0]
-@1401600
+@1401200
 -group_end
 @420
 #{top.tb_pe.instantiate_pe.pe1.signedoutput[11:0]} top.tb_pe.instantiate_pe.pe1.signedoutput[11] top.tb_pe.instantiate_pe.pe1.signedoutput[10] top.tb_pe.instantiate_pe.pe1.signedoutput[9] top.tb_pe.instantiate_pe.pe1.signedoutput[8] top.tb_pe.instantiate_pe.pe1.signedoutput[7] top.tb_pe.instantiate_pe.pe1.signedoutput[6] top.tb_pe.instantiate_pe.pe1.signedoutput[5] top.tb_pe.instantiate_pe.pe1.signedoutput[4] top.tb_pe.instantiate_pe.pe1.signedoutput[3] top.tb_pe.instantiate_pe.pe1.signedoutput[2] top.tb_pe.instantiate_pe.pe1.signedoutput[1] top.tb_pe.instantiate_pe.pe1.signedoutput[0]
 #{top.tb_pe.instantiate_pe.pe1.result[11:0]} top.tb_pe.instantiate_pe.pe1.result[11] top.tb_pe.instantiate_pe.pe1.result[10] top.tb_pe.instantiate_pe.pe1.result[9] top.tb_pe.instantiate_pe.pe1.result[8] top.tb_pe.instantiate_pe.pe1.result[7] top.tb_pe.instantiate_pe.pe1.result[6] top.tb_pe.instantiate_pe.pe1.result[5] top.tb_pe.instantiate_pe.pe1.result[4] top.tb_pe.instantiate_pe.pe1.result[3] top.tb_pe.instantiate_pe.pe1.result[2] top.tb_pe.instantiate_pe.pe1.result[1] top.tb_pe.instantiate_pe.pe1.result[0]
+#{top.tb_pe.instantiate_pe.pe1.reg_result[11:0]} top.tb_pe.instantiate_pe.pe1.reg_result[11] top.tb_pe.instantiate_pe.pe1.reg_result[10] top.tb_pe.instantiate_pe.pe1.reg_result[9] top.tb_pe.instantiate_pe.pe1.reg_result[8] top.tb_pe.instantiate_pe.pe1.reg_result[7] top.tb_pe.instantiate_pe.pe1.reg_result[6] top.tb_pe.instantiate_pe.pe1.reg_result[5] top.tb_pe.instantiate_pe.pe1.reg_result[4] top.tb_pe.instantiate_pe.pe1.reg_result[3] top.tb_pe.instantiate_pe.pe1.reg_result[2] top.tb_pe.instantiate_pe.pe1.reg_result[1] top.tb_pe.instantiate_pe.pe1.reg_result[0]
+@201
+-
 @28
 top.tb_pe.instantiate_pe.pe1.v
 top.tb_pe.instantiate_pe.pe1.overflow
+top.tb_pe.instantiate_pe.pe1.reg_overflow
 [pattern_trace] 1
 [pattern_trace] 0
