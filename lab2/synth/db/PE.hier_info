@@ -1,4 +1,4 @@
-|PE
+|PE_bin
 inputa[0] => reg_inputa[0].DATAIN
 inputa[1] => reg_inputa[1].DATAIN
 inputa[2] => reg_inputa[2].DATAIN
@@ -80,18 +80,18 @@ op[0] => reg_op[0].DATAIN
 op[1] => reg_op[1].DATAIN
 op[2] => reg_op[2].DATAIN
 op[3] => reg_op[3].DATAIN
-result[0] << reg_result[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] << reg_result[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] << reg_result[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] << reg_result[3].DB_MAX_OUTPUT_PORT_TYPE
-result[4] << reg_result[4].DB_MAX_OUTPUT_PORT_TYPE
-result[5] << reg_result[5].DB_MAX_OUTPUT_PORT_TYPE
-result[6] << reg_result[6].DB_MAX_OUTPUT_PORT_TYPE
-result[7] << reg_result[7].DB_MAX_OUTPUT_PORT_TYPE
-result[8] << reg_result[8].DB_MAX_OUTPUT_PORT_TYPE
-result[9] << reg_result[9].DB_MAX_OUTPUT_PORT_TYPE
-result[10] << reg_result[10].DB_MAX_OUTPUT_PORT_TYPE
-result[11] << reg_result[11].DB_MAX_OUTPUT_PORT_TYPE
-overflow << reg_overflow.DB_MAX_OUTPUT_PORT_TYPE
+result[0] <= reg_result[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= reg_result[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= reg_result[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= reg_result[3].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= reg_result[4].DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= reg_result[5].DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= reg_result[6].DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= reg_result[7].DB_MAX_OUTPUT_PORT_TYPE
+result[8] <= reg_result[8].DB_MAX_OUTPUT_PORT_TYPE
+result[9] <= reg_result[9].DB_MAX_OUTPUT_PORT_TYPE
+result[10] <= reg_result[10].DB_MAX_OUTPUT_PORT_TYPE
+result[11] <= reg_result[11].DB_MAX_OUTPUT_PORT_TYPE
+overflow <= reg_overflow.DB_MAX_OUTPUT_PORT_TYPE
 
 

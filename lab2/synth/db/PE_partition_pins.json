@@ -64,39 +64,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "shift_val[0]",
-					"strict" : false
-				},
-				{
-					"name" : "op[2]",
-					"strict" : false
-				},
-				{
-					"name" : "inputa[3]",
-					"strict" : false
-				},
-				{
-					"name" : "inputa[2]",
-					"strict" : false
-				},
-				{
-					"name" : "inputa[1]",
-					"strict" : false
-				},
-				{
-					"name" : "inputa[0]",
-					"strict" : false
-				},
-				{
-					"name" : "op[0]",
-					"strict" : false
-				},
-				{
 					"name" : "op[1]",
-					"strict" : false
-				},
-				{
-					"name" : "inputb[0]",
 					"strict" : false
 				},
 				{
@@ -104,27 +72,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "inputa[6]",
+					"name" : "op[0]",
 					"strict" : false
 				},
 				{
-					"name" : "inputa[5]",
-					"strict" : false
-				},
-				{
-					"name" : "inputa[4]",
-					"strict" : false
-				},
-				{
-					"name" : "inputb[3]",
-					"strict" : false
-				},
-				{
-					"name" : "inputb[2]",
-					"strict" : false
-				},
-				{
-					"name" : "inputb[1]",
+					"name" : "op[2]",
 					"strict" : false
 				},
 				{
@@ -132,19 +84,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "inputa[10]",
-					"strict" : false
-				},
-				{
-					"name" : "inputa[9]",
-					"strict" : false
-				},
-				{
-					"name" : "inputa[8]",
-					"strict" : false
-				},
-				{
 					"name" : "inputa[7]",
+					"strict" : false
+				},
+				{
+					"name" : "inputa[6]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_val[0]",
 					"strict" : false
 				},
 				{
@@ -161,6 +109,46 @@
 				},
 				{
 					"name" : "inputb[4]",
+					"strict" : false
+				},
+				{
+					"name" : "inputb[3]",
+					"strict" : false
+				},
+				{
+					"name" : "inputb[2]",
+					"strict" : false
+				},
+				{
+					"name" : "inputb[1]",
+					"strict" : false
+				},
+				{
+					"name" : "inputb[0]",
+					"strict" : false
+				},
+				{
+					"name" : "inputa[5]",
+					"strict" : false
+				},
+				{
+					"name" : "inputa[4]",
+					"strict" : false
+				},
+				{
+					"name" : "inputa[3]",
+					"strict" : false
+				},
+				{
+					"name" : "inputa[2]",
+					"strict" : false
+				},
+				{
+					"name" : "inputa[1]",
+					"strict" : false
+				},
+				{
+					"name" : "inputa[0]",
 					"strict" : false
 				},
 				{
@@ -181,6 +169,18 @@
 				},
 				{
 					"name" : "inputb[8]",
+					"strict" : false
+				},
+				{
+					"name" : "inputa[10]",
+					"strict" : false
+				},
+				{
+					"name" : "inputa[9]",
+					"strict" : false
+				},
+				{
+					"name" : "inputa[8]",
 					"strict" : false
 				},
 				{
