@@ -29,10 +29,10 @@ architecture start of PE_bin is
   constant SIGN                             : integer := wordlength-1;
   constant MUL_SIGN                         : integer := 2*wordlength;
   signal signedoutput                       : signed(wordlength-1 downto 0);                    -- signed output
-  signal mul_tmp_1                          : signed(2*wordlength+1 downto 0);                  -- temporary mul result
-  signal mul_tmp_2                          : signed(2*wordlength+1 downto 0);                  -- temporary mul result
+  signal mul_res                            : signed(2*wordlength+1 downto 0);                  -- temporary mul result
   signal before_shift, before_saturation    : signed(wordlength downto 0);                      -- Result before shift / saturation
   signal V                                  : std_logic;                                        -- Overflow flag
+  --signal tmp_inputb                         : signed(wordlength downto 0);
 
    -- Register signals for inputs
   signal reg_inputa, reg_inputb             : signed(wordlength downto 0);
@@ -55,28 +55,43 @@ begin
     end if;
   end process;
 
-  operations: process (reg_op, reg_inputa, reg_inputb, mul_tmp_1) is
+  --tmp_inputb <= -reg_inputb when reg_op = sub else
+  --              to_signed(3, tmp_inputb'length) when reg_op = mul3over4a else
+  --              to_signed(7, tmp_inputb'length) when reg_op = mul7over8a else
+  --              reg_inputb;
+
+  operations: process (reg_op, reg_inputa, reg_inputb, mul_res) is
+      variable mul_tmp : signed(2*wordlength+1 downto 0);
       variable tmp_inputb : signed(wordlength downto 0);
   begin
     before_shift <= (others => '0');
-    mul_tmp_1 <= (others => '0');
+    mul_tmp := (others => '0');
 
     if reg_op = sub then
-      tmp_inputb := -reg_inputb;
+        tmp_inputb := -reg_inputb;
     elsif reg_op = mul3over4a then
-      tmp_inputb := to_signed(3, tmp_inputb'length);
+        tmp_inputb := to_signed(3, tmp_inputb'length);
     elsif reg_op = mul7over8a then
-      tmp_inputb := to_signed(7, tmp_inputb'length);
+        tmp_inputb := to_signed(7, tmp_inputb'length);
     else
-      tmp_inputb := reg_inputb;
+        tmp_inputb := reg_inputb;
     end if;
 
     case reg_op is
       when add | sub =>
         before_shift <= reg_inputa + tmp_inputb;
       when mul3over4a | mul7over8a | mul =>
-        mul_tmp_1 <= reg_inputa*tmp_inputb;
-        before_shift <= (others => '0');
+        mul_tmp := reg_inputa*tmp_inputb;
+
+        if reg_op = mul3over4a then
+            mul_res <= resize(shift_right(mul_tmp, 2), mul_res'length);
+        elsif reg_op = mul7over8a then
+            mul_res <= resize(shift_right(mul_tmp, 3), mul_res'length);
+        else
+            mul_res <= resize(mul_tmp(24 downto 11), mul_res'length);
+        end if;
+
+        before_shift <= resize(mul_res, before_shift'length);
       when shifta =>
         before_shift <= reg_inputa;
       when nega =>
@@ -91,25 +106,9 @@ begin
     end case;
   end process;
 
-  shift: process(reg_op, before_shift, reg_shift_val, mul_tmp_1) is
-  begin
-      case reg_op is
-          when mul3over4a =>
-            mul_tmp_2 <= resize(shift_right(mul_tmp_1, 2), mul_tmp_2'length);
-            before_saturation <= shift_right(resize(shift_right(mul_tmp_1, 2), before_shift'length), to_integer(reg_shift_val));
-          when mul7over8a =>
-            mul_tmp_2 <= resize(shift_right(mul_tmp_1, 3), mul_tmp_2'length);
-            before_saturation <= shift_right(resize(shift_right(mul_tmp_1, 3), before_shift'length), to_integer(reg_shift_val));
-          when mul =>
-            mul_tmp_2 <= resize(mul_tmp_1(24 downto 11), mul_tmp_2'length);
-            before_saturation <= shift_right(resize(mul_tmp_1(24 downto 11), before_shift'length), to_integer(reg_shift_val));
-          when others =>
-            before_saturation <= shift_right(before_shift, to_integer(reg_shift_val));
-            mul_tmp_2 <= (others => '0');
-      end case;
-  end process;
+  before_saturation <= shift_right(before_shift, to_integer(reg_shift_val));
 
-  overflow_check: process (reg_op, reg_inputa, reg_inputb, before_saturation, mul_tmp_2) is
+  overflow_check: process (reg_op, reg_inputa, reg_inputb, before_saturation, mul_res) is
     constant sign_check_pos : signed(2*wordlength+1 downto wordlength) := (others => '0');
     constant sign_check_neg : signed(2*wordlength+1 downto wordlength) := (others => '1');
   begin
@@ -127,12 +126,12 @@ begin
             V <= '1';
         end if;
       when mul =>
-        if mul_tmp_2(SIGN) = '0' then
-            if mul_tmp_2(2*wordlength downto wordlength) /= sign_check_pos then
+        if mul_res(SIGN) = '0' then
+            if mul_res(2*wordlength downto wordlength) /= sign_check_pos then
                 V <= '1';
             end if;
         else
-            if mul_tmp_2(2*wordlength downto wordlength) /= sign_check_neg then
+            if mul_res(2*wordlength downto wordlength) /= sign_check_neg then
                 V <= '1';
             end if;
         end if;
@@ -148,7 +147,7 @@ begin
     end case;
   end process overflow_check;
 
-  saturation: process (before_saturation, reg_sat, reg_op, V, mul_tmp_2) is
+  saturation: process (before_saturation, reg_sat, reg_op, V, mul_res) is
     constant MAX_VALUE : signed(wordlength downto 0) := to_signed(2047, before_saturation'length);
     constant MIN_VALUE : signed(wordlength downto 0) := to_signed(-2048, before_saturation'length);
   begin
@@ -162,7 +161,7 @@ begin
               signedoutput <= resize(MIN_VALUE, signedoutput'length);
             end if;
         else
-            if mul_tmp_2 > MAX_VALUE then
+            if mul_res > MAX_VALUE then
               signedoutput <= resize(MAX_VALUE, signedoutput'length);
             else
               signedoutput <= resize(MIN_VALUE, signedoutput'length);
