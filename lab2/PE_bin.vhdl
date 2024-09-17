@@ -32,7 +32,6 @@ architecture start of PE_bin is
   signal mul_res                            : signed(2*wordlength+1 downto 0);                  -- temporary mul result
   signal before_shift, before_saturation    : signed(wordlength downto 0);                      -- Result before shift / saturation
   signal V                                  : std_logic;                                        -- Overflow flag
-  --signal tmp_inputb                         : signed(wordlength downto 0);
 
    -- Register signals for inputs
   signal reg_inputa, reg_inputb             : signed(wordlength downto 0);
@@ -55,17 +54,13 @@ begin
     end if;
   end process;
 
-  --tmp_inputb <= -reg_inputb when reg_op = sub else
-  --              to_signed(3, tmp_inputb'length) when reg_op = mul3over4a else
-  --              to_signed(7, tmp_inputb'length) when reg_op = mul7over8a else
-  --              reg_inputb;
-
   operations: process (reg_op, reg_inputa, reg_inputb, mul_res) is
       variable mul_tmp : signed(2*wordlength+1 downto 0);
       variable tmp_inputb : signed(wordlength downto 0);
   begin
     before_shift <= (others => '0');
     mul_tmp := (others => '0');
+    mul_res <= (others => '0');
 
     if reg_op = sub then
         tmp_inputb := -reg_inputb;
