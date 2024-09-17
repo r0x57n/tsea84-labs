@@ -56,36 +56,32 @@ begin
 
   operations: process (reg_op, reg_inputa, reg_inputb, mul_res) is
       variable mul_tmp : signed(2*wordlength+1 downto 0);
+      variable tmp_inputa : signed(wordlength downto 0);
       variable tmp_inputb : signed(wordlength downto 0);
   begin
     before_shift <= (others => '0');
-    mul_tmp := (others => '0');
     mul_res <= (others => '0');
 
     if reg_op = sub then
+        tmp_inputa := reg_inputa;
         tmp_inputb := -reg_inputb;
     elsif reg_op = mul3over4a then
-        tmp_inputb := to_signed(3, tmp_inputb'length);
+        tmp_inputa := shift_right(reg_inputa, 1);
+        tmp_inputb := shift_right(reg_inputa, 2);
     elsif reg_op = mul7over8a then
-        tmp_inputb := to_signed(7, tmp_inputb'length);
+        tmp_inputa := reg_inputa;
+        tmp_inputb := -(shift_right(reg_inputa, 3));
     else
+        tmp_inputa := reg_inputa;
         tmp_inputb := reg_inputb;
     end if;
 
     case reg_op is
-      when add | sub =>
-        before_shift <= reg_inputa + tmp_inputb;
-      when mul3over4a | mul7over8a | mul =>
+      when add | sub | mul3over4a | mul7over8a =>
+        before_shift <= tmp_inputa + tmp_inputb;
+      when mul =>
         mul_tmp := reg_inputa*tmp_inputb;
-
-        if reg_op = mul3over4a then
-            mul_res <= resize(shift_right(mul_tmp, 2), mul_res'length);
-        elsif reg_op = mul7over8a then
-            mul_res <= resize(shift_right(mul_tmp, 3), mul_res'length);
-        else
-            mul_res <= resize(mul_tmp(24 downto 11), mul_res'length);
-        end if;
-
+        mul_res <= resize(mul_tmp(24 downto 11), mul_res'length);
         before_shift <= resize(mul_res, before_shift'length);
       when shifta =>
         before_shift <= reg_inputa;
