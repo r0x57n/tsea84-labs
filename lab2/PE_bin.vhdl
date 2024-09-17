@@ -58,6 +58,9 @@ begin
   operations: process (reg_op, reg_inputa, reg_inputb, mul_tmp_1) is
       variable tmp_inputb : signed(wordlength downto 0);
   begin
+    before_shift <= (others => '0');
+    mul_tmp_1 <= (others => '0');
+
     if reg_op = sub then
       tmp_inputb := -reg_inputb;
     elsif reg_op = mul3over4a then
@@ -84,8 +87,7 @@ begin
         else
             before_shift <= -reg_inputa;
         end if;
-      when others =>
-          before_shift <= (others => '0');
+      when others => null;
     end case;
   end process;
 
@@ -103,11 +105,13 @@ begin
             before_saturation <= shift_right(resize(mul_tmp_1(24 downto 11), before_shift'length), to_integer(reg_shift_val));
           when others =>
             before_saturation <= shift_right(before_shift, to_integer(reg_shift_val));
+            mul_tmp_2 <= (others => '0');
       end case;
   end process;
 
   overflow_check: process (reg_op, reg_inputa, reg_inputb, before_saturation, mul_tmp_2) is
-    variable sign_check : signed(2*wordlength+1 downto wordlength);
+    constant sign_check_pos : signed(2*wordlength+1 downto wordlength) := (others => '0');
+    constant sign_check_neg : signed(2*wordlength+1 downto wordlength) := (others => '1');
   begin
     V <= '0';
 
@@ -124,13 +128,11 @@ begin
         end if;
       when mul =>
         if mul_tmp_2(SIGN) = '0' then
-            sign_check := (others => '0');
-            if mul_tmp_2(2*wordlength downto wordlength) /= sign_check then
+            if mul_tmp_2(2*wordlength downto wordlength) /= sign_check_pos then
                 V <= '1';
             end if;
         else
-            sign_check := (others => '1');
-            if mul_tmp_2(2*wordlength downto wordlength) /= sign_check then
+            if mul_tmp_2(2*wordlength downto wordlength) /= sign_check_neg then
                 V <= '1';
             end if;
         end if;
