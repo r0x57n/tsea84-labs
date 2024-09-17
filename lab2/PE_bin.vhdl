@@ -127,11 +127,7 @@ begin
                 V <= '1';
             end if;
         end if;
-      when nega =>
-        if reg_inputa = -2048 then
-            V <= '1';
-        end if;
-      when absa =>
+      when nega | absa =>
         if (before_saturation = -2048 or before_saturation = 2048) then
             V <= '1';
         end if;
@@ -147,7 +143,7 @@ begin
 
       if reg_sat = '1' and V = '1' then
         if reg_op /= mul then
-            if before_saturation > MAX_VALUE then
+            if before_saturation(SIGN) = '1' then
               signedoutput <= resize(MAX_VALUE, signedoutput'length);
             else
               signedoutput <= resize(MIN_VALUE, signedoutput'length);
