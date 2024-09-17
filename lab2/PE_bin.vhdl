@@ -27,11 +27,12 @@ end entity PE_bin;
 
 architecture start of PE_bin is
   constant SIGN                             : integer := wordlength-1;
-  constant MUL_SIGN                         : integer := 2*wordlength;
-  signal signedoutput                       : signed(wordlength-1 downto 0);                    -- signed output
-  signal mul_res                            : signed(2*wordlength+1 downto 0);                  -- temporary mul result
-  signal before_shift, before_saturation    : signed(wordlength downto 0);                      -- Result before shift / saturation
-  signal V                                  : std_logic;                                        -- Overflow flag
+  constant MUL_LENGTH                       : integer := 2*wordlength-1;
+  constant MUL_SIGN                         : integer := MUL_LENGTH-1;
+  signal mul_res                            : signed(MUL_LENGTH downto 0);      -- temporary mul result
+  signal before_shift, before_saturation    : signed(wordlength downto 0);      -- Result before shift / saturation
+  signal V                                  : std_logic;                        -- Overflow flag
+  signal signedoutput                       : signed(wordlength-1 downto 0);    -- signed output
 
    -- Register signals for inputs
   signal reg_inputa, reg_inputb             : signed(wordlength downto 0);
@@ -55,7 +56,7 @@ begin
   end process;
 
   operations: process (reg_op, reg_inputa, reg_inputb, mul_res) is
-      variable mul_tmp : signed(2*wordlength+1 downto 0);
+      variable mul_tmp : signed(MUL_LENGTH downto 0);
       variable tmp_inputa : signed(wordlength downto 0);
       variable tmp_inputb : signed(wordlength downto 0);
   begin
@@ -80,8 +81,8 @@ begin
       when add | sub | mul3over4a | mul7over8a =>
         before_shift <= tmp_inputa + tmp_inputb;
       when mul =>
-        mul_tmp := reg_inputa*tmp_inputb;
-        mul_res <= resize(mul_tmp(24 downto 11), mul_res'length);
+        mul_tmp := resize(reg_inputa*tmp_inputb, mul_tmp'length);
+        mul_res <= resize(mul_tmp(MUL_LENGTH downto wordlength-1), mul_res'length);
         before_shift <= resize(mul_res, before_shift'length);
       when shifta =>
         before_shift <= reg_inputa;
@@ -118,11 +119,11 @@ begin
         end if;
       when mul =>
         if mul_res(SIGN) = '0' then
-            if mul_res(2*wordlength downto wordlength) /= sign_check_pos then
+            if mul_res(MUL_LENGTH downto wordlength) /= sign_check_pos then
                 V <= '1';
             end if;
         else
-            if mul_res(2*wordlength downto wordlength) /= sign_check_neg then
+            if mul_res(MUL_LENGTH downto wordlength) /= sign_check_neg then
                 V <= '1';
             end if;
         end if;
