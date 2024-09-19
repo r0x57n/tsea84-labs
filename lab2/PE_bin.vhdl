@@ -27,18 +27,20 @@ end entity PE_bin;
 
 architecture start of PE_bin is
   constant SIGN                             : integer := wordlength-1;
-  constant MUL_LENGTH                       : integer := 2*wordlength-1;
-  constant MUL_SIGN                         : integer := MUL_LENGTH-1;
-  signal mul_res                            : signed(MUL_LENGTH downto 0);      -- temporary mul result
+  constant MUL_SIGN                         : integer := 2*wordlength-1;
+  signal mul_bits                           : signed(MUL_SIGN downto 0); -- temporary mul higher bits res
+  signal mul_bits_1                         : signed(MUL_SIGN downto 0);
   signal before_shift, before_saturation    : signed(wordlength downto 0);      -- Result before shift / saturation
+  signal before_saturation_1                : signed(wordlength downto 0);
   signal V                                  : std_logic;                        -- Overflow flag
   signal signedoutput                       : signed(wordlength-1 downto 0);    -- signed output
 
    -- Register signals for inputs
-  signal reg_inputa, reg_inputb             : signed(wordlength downto 0);
-  signal reg_sat                            : std_logic;
+  signal reg_inputa, reg_inputa_1           : signed(wordlength downto 0);
+  signal reg_inputb, reg_inputb_1           : signed(wordlength downto 0);
+  signal reg_sat, reg_sat_1                 : std_logic;
   signal reg_shift_val                      : unsigned(shift_wordlength-1 downto 0);
-  signal reg_op                             : op_type;
+  signal reg_op, reg_op_1                   : op_type;
 
   -- Register signals for outputs
   signal reg_result                         : std_logic_vector(wordlength-1 downto 0);
@@ -48,20 +50,26 @@ begin
   begin
     if rising_edge(clk) then
       reg_inputa    <= resize(signed(inputa), reg_inputa'length);
+      reg_inputa_1  <= reg_inputa;
       reg_inputb    <= resize(signed(inputb), reg_inputb'length);
+      reg_inputb_1  <= reg_inputb;
       reg_sat       <= sat;
+      reg_sat_1     <= reg_sat;
       reg_shift_val <= unsigned(shift_val);
       reg_op        <= op;
+      reg_op_1      <= reg_op;
+      before_saturation_1 <= before_saturation;
+      mul_bits_1   <= mul_bits;
     end if;
   end process;
 
-  operations: process (reg_op, reg_inputa, reg_inputb, mul_res) is
-      variable mul_tmp : signed(MUL_LENGTH downto 0);
+  operations: process (reg_op, reg_inputa, reg_inputb, mul_bits) is
+      variable mul_tmp : signed(MUL_SIGN downto 0);
       variable tmp_inputa : signed(wordlength downto 0);
       variable tmp_inputb : signed(wordlength downto 0);
   begin
     before_shift <= (others => '0');
-    mul_res <= (others => '0');
+    mul_bits <= (others => '0');
 
     if reg_op = sub then
         tmp_inputa := reg_inputa;
@@ -82,8 +90,8 @@ begin
         before_shift <= tmp_inputa + tmp_inputb;
       when mul =>
         mul_tmp := resize(reg_inputa*tmp_inputb, mul_tmp'length);
-        mul_res <= resize(mul_tmp(MUL_LENGTH downto wordlength-1), mul_res'length);
-        before_shift <= resize(mul_res, before_shift'length);
+        mul_bits <= shift_right(mul_tmp, 11);
+        before_shift <= resize(mul_bits, before_shift'length);
       when shifta =>
         before_shift <= reg_inputa;
       when nega =>
@@ -100,56 +108,51 @@ begin
 
   before_saturation <= shift_right(before_shift, to_integer(reg_shift_val));
 
-  overflow_check: process (reg_op, reg_inputa, reg_inputb, before_saturation, mul_res) is
+  overflow_check: process (reg_op_1, reg_inputa_1, reg_inputb_1, before_saturation_1, mul_bits_1) is
     constant sign_check_pos : signed(2*wordlength+1 downto wordlength) := (others => '0');
     constant sign_check_neg : signed(2*wordlength+1 downto wordlength) := (others => '1');
   begin
     V <= '0';
 
-    case reg_op is
+    case reg_op_1 is
       when add =>
-        if ((reg_inputa(SIGN) = reg_inputb(SIGN)) and
-            (reg_inputa(SIGN) /= before_saturation(SIGN))) then
+        if ((reg_inputa_1(SIGN) = reg_inputb_1(SIGN)) and
+            (reg_inputa_1(SIGN) /= before_saturation_1(SIGN))) then
             V <= '1';
         end if;
       when sub =>
-        if ((reg_inputa(SIGN)='0' and reg_inputb(SIGN)='1' and before_saturation(SIGN)='1') or
-            (reg_inputa(SIGN)='1' and reg_inputb(SIGN)='0' and before_saturation(SIGN)='0')) then
+        if ((reg_inputa_1(SIGN)='0' and reg_inputb_1(SIGN)='1' and before_saturation_1(SIGN)='1') or
+            (reg_inputa_1(SIGN)='1' and reg_inputb_1(SIGN)='0' and before_saturation_1(SIGN)='0')) then
             V <= '1';
         end if;
       when mul =>
-        if mul_res(SIGN) = '0' then
-            if mul_res(MUL_LENGTH downto wordlength) /= sign_check_pos then
-                V <= '1';
-            end if;
-        else
-            if mul_res(MUL_LENGTH downto wordlength) /= sign_check_neg then
-                V <= '1';
-            end if;
+        if ((mul_bits_1(SIGN) = '0' and (mul_bits_1(MUL_SIGN downto wordlength) /= sign_check_pos)) or
+            (mul_bits_1(SIGN) = '1' and (mul_bits_1(MUL_SIGN downto wordlength) /= sign_check_neg))) then
+            V <= '1';
         end if;
       when nega | absa =>
-        if (before_saturation = -2048 or before_saturation = 2048) then
+        if (before_saturation_1 = -2048 or before_saturation_1 = 2048) then
             V <= '1';
         end if;
       when others => null;
     end case;
   end process overflow_check;
 
-  saturation: process (before_saturation, reg_sat, reg_op, V, mul_res) is
+  saturation: process (before_saturation_1, reg_sat_1, reg_op_1, V, mul_bits_1) is
     constant MAX_VALUE : signed(wordlength downto 0) := to_signed(2047, before_saturation'length);
     constant MIN_VALUE : signed(wordlength downto 0) := to_signed(-2048, before_saturation'length);
   begin
-      signedoutput <= before_saturation(wordlength-1 downto 0);
+      signedoutput <= before_saturation_1(wordlength-1 downto 0);
 
-      if reg_sat = '1' and V = '1' then
-        if reg_op /= mul then
-            if before_saturation(SIGN) = '1' then
+      if reg_sat_1 = '1' and V = '1' then
+        if reg_op_1 /= mul then
+            if before_saturation_1(SIGN) = '1' then
               signedoutput <= resize(MAX_VALUE, signedoutput'length);
             else
               signedoutput <= resize(MIN_VALUE, signedoutput'length);
             end if;
         else
-            if mul_res > MAX_VALUE then
+            if mul_bits_1 > MAX_VALUE then
               signedoutput <= resize(MAX_VALUE, signedoutput'length);
             else
               signedoutput <= resize(MIN_VALUE, signedoutput'length);

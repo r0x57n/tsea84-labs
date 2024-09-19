@@ -38,7 +38,7 @@ lib.set_sim_option("modelsim.init_file.gui", "pe_waves_sim.do")
 # Set generics
 lib.set_generic("wordlength", 12)
 lib.set_generic("shift_wordlength", 3)
-lib.set_generic("pipeline", 2)
+lib.set_generic("pipeline", 3)
 lib.set_generic("file_name", abspath("tests.txt"))
 # lib.set_generic("file_name", abspath("testing.txt"))
 # Set if logic_op is an enum or binary
