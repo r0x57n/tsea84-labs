@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Tue Sep 17 16:21:56 2024
+Analysis & Synthesis Status : Successful - Thu Sep 19 11:52:14 2024
 Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 Patches 0.02std SC Standard Edition
 Revision Name : PE
 Top-level Entity Name : PE_bin
 Family : Cyclone IV E
-Total logic elements : 212
-    Total combinational functions : 180
-    Dedicated logic registers : 45
-Total registers : 45
+Total logic elements : 238
+    Total combinational functions : 199
+    Dedicated logic registers : 66
+Total registers : 66
 Total pins : 46
 Total virtual pins : 0
 Total memory bits : 0

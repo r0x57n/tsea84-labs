@@ -1,0 +1,174 @@
+-- Processing element lab file for TSEA84
+-- Oscar Gustafsson, Cheolyong Bae, 2019
+-- oscar.gustafsson@liu.se
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+use work.pe_types.all;
+
+entity PE_bin is
+  generic (
+    wordlength       : integer := 12;   -- Data wordlength
+    shift_wordlength : integer := 3     -- Shift word length
+  );
+
+  port (
+    inputa, inputb : in  std_logic_vector(wordlength-1 downto 0);       -- Inputs
+    sat            : in  std_logic;                                     -- Saturate output
+    clk            : in  std_logic;                                     -- Clock
+    shift_val      : in  std_logic_vector(shift_wordlength-1 downto 0); -- Output shift
+    op             : in  op_type;                                       -- Operation
+    result         : out std_logic_vector(wordlength-1 downto 0);       -- Output
+    overflow       : out std_logic                                      -- Overflow
+   );
+end entity PE_bin;
+
+architecture start of PE_bin is
+  constant SIGN                             : integer := wordlength-1;
+  constant MUL_LENGTH                       : integer := 2*wordlength-1;
+  constant MUL_SIGN                         : integer := MUL_LENGTH-1;
+  constant MAX_VALUE                        : integer := 2047;
+  constant MIN_VALUE                        : integer := -2048;
+  signal mul_res                            : signed(MUL_LENGTH downto 0);      -- temporary mul result
+  signal before_shift, before_saturation    : signed(wordlength downto 0);      -- Result before shift / saturation
+                                                                                -- kan göra before_saturation mindre och kolla befoer_shift ist
+  signal V                                  : std_logic;                        -- Overflow flag
+  signal signedoutput                       : signed(wordlength-1 downto 0);    -- signed output
+
+   -- Register signals for inputs
+  signal reg_inputa, reg_inputb             : signed(wordlength-1 downto 0);
+  signal reg_sat                            : std_logic;
+  signal reg_shift_val                      : unsigned(shift_wordlength-1 downto 0);
+  signal reg_op                             : op_type;
+
+  -- Register signals for outputs
+  signal reg_result                         : std_logic_vector(wordlength-1 downto 0);
+  signal reg_overflow                       : std_logic;
+begin
+  pipeline_inputs: process(clk)
+  begin
+    if rising_edge(clk) then
+      reg_inputa    <= signed(inputa);
+      reg_inputb    <= signed(inputb);
+      reg_sat       <= sat;
+      reg_shift_val <= unsigned(shift_val);
+      reg_op        <= op;
+    end if;
+  end process;
+
+  operations: process (reg_op, reg_inputa, reg_inputb, mul_res) is
+      variable mul_tmp : signed(MUL_LENGTH downto 0);
+      variable tmp_inputa : signed(wordlength downto 0);
+      variable tmp_inputb : signed(wordlength-1 downto 0);
+  begin
+    before_shift <= (others => '0');
+    mul_res <= (others => '0');
+
+    if reg_op = sub then
+        tmp_inputa := reg_inputa(SIGN) & reg_inputa;
+        tmp_inputb := -reg_inputb;
+    elsif reg_op = mul3over4a then
+        tmp_inputa := to_signed(0, 1) & shift_right(reg_inputa, 1);
+        tmp_inputb := shift_right(reg_inputa, 2);
+    elsif reg_op = mul7over8a then
+        tmp_inputa := reg_inputa(SIGN) & reg_inputa;
+        tmp_inputb := -(shift_right(reg_inputa, 3));
+    else
+        tmp_inputa := reg_inputa(SIGN) & reg_inputa;
+        tmp_inputb := reg_inputb;
+    end if;
+
+    case reg_op is
+      when add | sub | mul3over4a | mul7over8a =>
+        before_shift <= tmp_inputa + resize(tmp_inputb, before_shift'length);
+      when mul =>
+        mul_tmp := reg_inputa*tmp_inputb;
+        mul_res <= resize(mul_tmp(MUL_LENGTH downto wordlength-1), mul_res'length);
+        before_shift <= resize(mul_res, before_shift'length);
+      when shifta =>
+        before_shift <= resize(reg_inputa, before_shift'length);
+      when nega =>
+        before_shift <= resize(-reg_inputa, before_shift'length);
+      when absa =>
+        if tmp_inputa(SIGN) = '1' then
+            before_shift <= resize(-tmp_inputa, before_shift'length);
+        else
+            before_shift <= resize(tmp_inputa, before_shift'length);
+        end if;
+      when others => null;
+    end case;
+  end process;
+
+  before_saturation <= shift_right(before_shift, to_integer(reg_shift_val));
+
+  overflow_check: process (reg_op, reg_inputa, reg_inputb, before_saturation, mul_res) is
+    constant sign_check_pos : signed(2*wordlength+1 downto wordlength) := (others => '0');
+    constant sign_check_neg : signed(2*wordlength+1 downto wordlength) := (others => '1');
+  begin
+    V <= '0';
+
+    case reg_op is
+      when add =>
+        if ((reg_inputa(SIGN) = reg_inputb(SIGN)) and
+            (reg_inputa(SIGN) /= before_saturation(SIGN))) then
+            V <= '1';
+        end if;
+      when sub =>
+        if ((reg_inputa(SIGN)='0' and reg_inputb(SIGN)='1' and before_saturation(SIGN)='1') or
+            (reg_inputa(SIGN)='1' and reg_inputb(SIGN)='0' and before_saturation(SIGN)='0')) then
+            V <= '1';
+        end if;
+      when mul =>
+        if mul_res(SIGN) = '0' then
+            if mul_res(MUL_LENGTH downto wordlength) /= sign_check_pos then
+                V <= '1';
+            end if;
+        else
+            if mul_res(MUL_LENGTH downto wordlength) /= sign_check_neg then
+                V <= '1';
+            end if;
+        end if;
+      when nega | absa =>
+        if before_saturation = MIN_VALUE or before_saturation > MAX_VALUE then
+            V <= '1';
+        end if;
+      when others => null;
+    end case;
+  end process overflow_check;
+
+  saturation: process (before_saturation, reg_sat, reg_op, V, mul_res) is
+  begin
+      signedoutput <= before_saturation(wordlength-1 downto 0);
+
+      if reg_sat = '1' and V = '1' then
+        if reg_op /= mul then
+            if before_saturation < MIN_VALUE then
+              --signedoutput <= resize(MAX_VALUE, signedoutput'length);
+              signedoutput <= to_signed(MIN_VALUE, wordlength);
+            else
+              --signedoutput <= resize(MIN_VALUE, signedoutput'length);
+              signedoutput <= to_signed(MAX_VALUE, wordlength);
+            end if;
+        else
+            if mul_res > MAX_VALUE then
+              signedoutput <= to_signed(MAX_VALUE, wordlength);
+            else
+              signedoutput <= to_signed(MIN_VALUE, wordlength);
+            end if;
+        end if;
+      end if;
+  end process saturation;
+
+  pipeline_outputs: process(clk)
+  begin
+    if rising_edge(clk) then
+      reg_overflow  <= V;
+      reg_result    <= std_logic_vector(signedoutput);
+    end if;
+  end process;
+
+  overflow <= reg_overflow;
+  result <= reg_result;
+end architecture start;
