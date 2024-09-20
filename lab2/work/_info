@@ -1,6 +1,7 @@
 m255
 K4
 z2
+!s11f MIXED_VERSIONS
 !s99 nomlopt
 !s11e vcom 2021.3 2021.07, Jul 13 2021
 13
@@ -17,97 +18,192 @@ V=D?nzf@ofX;CGO:KZ;zZW1
 =1-001b213b2bbc-66ddce4c-d4ebb-1e991
 !s124 OEM100
 o-quiet -auto_acc_if_foreign -work work
-tCvgOpt 0
+Z1 tCvgOpt 0
 n@_opt
 OL;O;2021.3;73
+R0
+vhard_block
+Z2 !s110 1726825056
+!i10b 1
+!s100 K5OD6C<9gc4OFXfM>i[482
+IAizzPOm@kTKYG<NI:zlUn0
+Z3 d/home/raswa151/courses/tsea84-labs/lab2
+Z4 w1726824867
+Z5 8PE_7_1200mv_85c_slow.vo
+Z6 FPE_7_1200mv_85c_slow.vo
+!i122 3
+L0 5956 34
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2021.3;73
+r1
+!s85 0
+31
+Z9 !s108 1726825056.000000
+Z10 !s107 PE_7_1200mv_85c_slow.vo|
+Z11 !s90 PE_7_1200mv_85c_slow.vo|
+!i113 0
+Z12 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
 Epe
-Z1 w1725607378
-Z2 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
-Z3 DPx4 work 8 pe_types 0 22 ?;R0@47<7HNSY?hWO<Bd52
-Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z13 w1725607378
+Z14 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z15 DPx4 work 8 pe_types 0 22 ?;R0@47<7HNSY?hWO<Bd52
+Z16 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z17 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z18 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 2
 R0
-Z7 8PE.vhdl
-Z8 FPE.vhdl
+Z19 8PE.vhdl
+Z20 FPE.vhdl
 l0
-L11 1
+Z21 L11 1
 Vf8M5ME6JB^LWSNSG>IC?13
 !s100 g<WkHEbIzW8z?n[BKW;d`3
-Z9 OL;C;2021.3;73
+Z22 OL;C;2021.3;73
 33
-Z10 !s110 1725812276
+Z23 !s110 1725812276
 !i10b 1
-Z11 !s108 1725812276.000000
-Z12 !s90 PE.vhdl|-2008|
-Z13 !s107 PE.vhdl|
+Z24 !s108 1725812276.000000
+Z25 !s90 PE.vhdl|-2008|
+Z26 !s107 PE.vhdl|
 !i113 0
-Z14 o-2008
-Z15 tExplicit 1 CvgOpt 0
+Z27 o-2008
+Z28 tExplicit 1 CvgOpt 0
 Astart
-R2
-R3
-R4
-R5
-R6
+R14
+R15
+R16
+R17
+R18
 DEx4 work 2 pe 0 22 f8M5ME6JB^LWSNSG>IC?13
 !i122 2
 l39
 L28 57
 Vjlk<eg78Dbb9>gF3UY4Vo3
 !s100 P1P>T5GO:HA?>C4SU1YGN2
-R9
+R22
 33
-R10
+R23
 !i10b 1
-R11
-R12
-R13
+R24
+R25
+R26
 !i113 0
+R27
+R28
+Epe_bin
+Z29 w1726736448
 R14
-R15
-Ppe_types
-R2
-R6
-R5
-R4
-!i122 0
-R1
-R0
-Z16 8pe_types.vhdl
-Z17 Fpe_types.vhdl
-l0
-L6 1
-V?;R0@47<7HNSY?hWO<Bd52
-!s100 bnY9d<7Y[cmYWXa?jLm8M3
-R9
-32
-b1
-Z18 !s110 1725812270
-!i10b 1
-Z19 !s108 1725812270.000000
-Z20 !s90 pe_types.vhdl|
-Z21 !s107 pe_types.vhdl|
-!i113 0
-R15
-Bbody
-R3
-R2
-R6
-R5
-R4
-!i122 0
-l0
-L15 1
-Vh]e`eS<bP?AjRCBj]hJjn3
-!s100 WI4>Igj;J9kB[kafQNHQG1
-R9
-32
+Z30 DPx4 work 8 pe_types 0 22 dV4C9=ZjbQjG4g5W76n4G3
+R16
+R17
 R18
-!i10b 1
-R19
-R20
+!i122 5
+R3
+Z31 8PE_bin.vhdl
+Z32 FPE_bin.vhdl
+l0
 R21
+V6lXLY]DHd@;edg:Y[B`6h3
+!s100 One`fJ^[H2QJNgELeWCOb3
+R22
+33
+Z33 !s110 1726825088
+!i10b 1
+Z34 !s108 1726825088.000000
+Z35 !s90 PE_bin.vhdl|-2008|
+!s107 PE_bin.vhdl|
 !i113 0
-R15
+R27
+R28
+Astart
+R14
+R30
+R16
+R17
+R18
+DEx4 work 6 pe_bin 0 22 6lXLY]DHd@;edg:Y[B`6h3
+!i122 5
+l48
+L28 147
+V3ddGY1lWLM^;8KCjTfSDK0
+!s100 A3XA4JmBUJ5U9FSMLSnf53
+R22
+33
+R33
+!i10b 1
+R34
+R35
+Z36 !s107 PE_bin.vhdl|
+!i113 0
+R27
+R28
+vPE_bin
+R2
+!i10b 1
+!s100 zc5Bm5KdDdXP?ImblbBhB2
+IZSAC01;7A0?JN<b=of66j1
+R3
+R4
+R5
+R6
+!i122 3
+L0 32 5923
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R1
+n@p@e_bin
+Ppe_types
+R14
+R18
+R17
+R16
+!i122 4
+Z37 w1726556002
+R3
+Z38 8pe_types.vhdl
+Z39 Fpe_types.vhdl
+l0
+L7 1
+VdV4C9=ZjbQjG4g5W76n4G3
+!s100 F2@kh>JlUG`YTYV4T^nW[0
+R22
+33
+b1
+Z40 !s110 1726825081
+!i10b 1
+Z41 !s108 1726825081.000000
+Z42 !s90 pe_types.vhdl|-2008|
+Z43 !s107 pe_types.vhdl|
+!i113 0
+R27
+R28
+Bbody
+R30
+R14
+R18
+R17
+R16
+!i122 4
+l0
+L17 1
+VK:fHSiPGNKUB^m=R9??SA3
+!s100 8=>OlkZ;ifP8OQLO9E4gL3
+R22
+33
+R40
+!i10b 1
+R41
+R42
+R43
+!i113 0
+R27
+R28

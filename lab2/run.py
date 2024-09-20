@@ -22,15 +22,17 @@ lib.add_source_files(join(root, "tb_pe.vhdl"))
 # lib.add_source_files(join(root, "PE_bin.v"))
 
 # Add files required for the synthesized version
-# lib.add_source_files(join(root, "PE.vo"))
-sdffile = abspath("PE_7_1200mv_85c_slow.vo")
+#lib.add_source_files(join(root, "PE.vo"))
+lib.add_source_files(join(root, "PE_7_1200mv_85c_slow.vo"))
+lib.add_source_files("/courses/TSEA84/src/verilog/src/altera_primitives.v")
+lib.add_source_files("/courses/TSEA84/src/verilog/src/cycloneive_atoms.v")
+
+sdffile = abspath("PE_7_1200mv_85c_v_slow.sdo")
 dut = "/tb_pe/instantiate_pe/PE1"
 lib.set_sim_option("modelsim.vsim_flags", [f"-sdftyp {dut}={sdffile}"])
-# lib.add_source_files("/courses/TSEA84/src/verilog/src/altera_primitives.v")
-# lib.add_source_files("/courses/TSEA84/src/verilog/src/cycloneive_atoms.v")
 
 
-# Set flags for coverage
+## Set flags for coverage
 #lib.set_compile_option("modelsim.vcom_flags", ["+cover=bs"])
 #lib.set_compile_option("modelsim.vlog_flags", ["+cover=bs"])
 #lib.set_sim_option("enable_coverage", True)
@@ -51,7 +53,7 @@ lib.set_generic("file_name", abspath("tests.txt"))
 lib.set_generic("logic_op", False)
 
 
-# Coverage callback
+## Coverage callback
 #def post_run(results):
 #    results.merge_coverage(file_name="coverage_data")
 #
