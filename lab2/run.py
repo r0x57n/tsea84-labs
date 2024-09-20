@@ -23,6 +23,9 @@ lib.add_source_files(join(root, "tb_pe.vhdl"))
 
 # Add files required for the synthesized version
 # lib.add_source_files(join(root, "PE.vo"))
+sdffile = abspath("PE_7_1200mv_85c_slow.vo")
+dut = "/tb_pe/instantiate_pe/PE1"
+lib.set_sim_option("modelsim.vsim_flags", [f"-sdftyp {dut}={sdffile}"])
 # lib.add_source_files("/courses/TSEA84/src/verilog/src/altera_primitives.v")
 # lib.add_source_files("/courses/TSEA84/src/verilog/src/cycloneive_atoms.v")
 
@@ -37,6 +40,7 @@ lib.set_sim_option("modelsim.init_file.gui", "pe_waves_sim.do")
 
 # Set generics
 lib.set_generic("wordlength", 12)
+lib.set_generic("clk_gen", "20ns")
 lib.set_generic("shift_wordlength", 3)
 lib.set_generic("pipeline", 3)
 lib.set_generic("file_name", abspath("tests.txt"))
