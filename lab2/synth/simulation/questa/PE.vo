@@ -17,14 +17,14 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 23.1std.0 Build 991 11/28/2023 Patches 0.02std SC Standard Edition"
 
-// DATE "09/20/2024 10:29:14"
+// DATE "09/19/2024 12:05:21"
 
 // 
 // Device: Altera EP4CE115F23C7 Package FBGA484
 // 
 
 // 
-// This Verilog file should be used for Custom Verilog HDL only
+// This Verilog file should be used for QuestaSim (Verilog) only
 // 
 
 `timescale 1 ps/ 1 ps
@@ -107,10 +107,6 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
-// synopsys translate_off
-initial $sdf_annotate("PE_v.sdo");
-// synopsys translate_on
-
 wire \Mult0|auto_generated|mac_out2~dataout ;
 wire \Mult0|auto_generated|mac_out2~DATAOUT1 ;
 wire \Mult0|auto_generated|mac_out2~DATAOUT2 ;
