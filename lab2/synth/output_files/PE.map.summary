@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Successful - Tue Sep 24 11:17:39 2024
+Analysis & Synthesis Status : Successful - Thu Sep 26 14:16:08 2024
 Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 Patches 0.02std SC Standard Edition
 Revision Name : PE
-Top-level Entity Name : PE_bin
+Top-level Entity Name : PE_bin_2
 Family : Cyclone IV E
 Total logic elements : 238
     Total combinational functions : 199

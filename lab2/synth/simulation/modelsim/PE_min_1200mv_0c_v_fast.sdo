@@ -29,8 +29,8 @@
 
 (DELAYFILE
   (SDFVERSION "2.1")
-  (DESIGN "PE_bin")
-  (DATE "09/24/2024 11:17:56")
+  (DESIGN "PE_bin_2")
+  (DATE "09/26/2024 14:16:31")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 23.1std.0 Build 991 11/28/2023 Patches 0.02std SC Standard Edition")

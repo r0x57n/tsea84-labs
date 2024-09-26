@@ -8,7 +8,7 @@ use ieee.numeric_std.all;
 
 use work.pe_types.all;
 
-entity PE_bin is
+entity PE_bin_2 is
   generic (
     wordlength       : integer := 12;   -- Data wordlength
     shift_wordlength : integer := 3     -- Shift word length
@@ -23,9 +23,9 @@ entity PE_bin is
     result         : out std_logic_vector(wordlength-1 downto 0);       -- Output
     overflow       : out std_logic                                      -- Overflow
    );
-end entity PE_bin;
+end entity PE_bin_2;
 
-architecture start of PE_bin is
+architecture start of PE_bin_2 is
   constant SIGN                             : integer := wordlength-1;
   constant MUL_SIGN                         : integer := 2*wordlength-1;
   signal mul_bits                           : signed(MUL_SIGN downto 0); -- temporary mul higher bits res

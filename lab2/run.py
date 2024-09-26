@@ -15,17 +15,17 @@ lib = vu.add_library("lib")
 
 # Add VHDL files for the standard design
 lib.add_source_files(join(root, "pe_types.vhdl"))
-lib.add_source_files(join(root, "PE_bin.vhdl"))
+#lib.add_source_files(join(root, "PE_bin.vhdl"))
 
 # Add files required for the synthesized version
 lib.add_source_files(join(root, "altera_primitives.v"))
 lib.add_source_files(join(root, "cycloneive_atoms.v"))
 lib.add_source_files([join(root, "PE_7_1200mv_85c_slow.vo"), join(root, "tb_pe.vhdl")])
 
-# Complains about not finding tb_pe.vhdl in lib
-tb = lib.get_source_file("tb_pe.vhdl")
-dut = lib.get_source_file("PE_7_1200mv_85c_slow.vo")
-tb.add_dependency_on(dut)
+## Complains about not finding tb_pe.vhdl in lib
+#tb = lib.get_source_file("tb_pe.vhdl")
+#dut = lib.get_source_file("PE_7_1200mv_85c_slow.vo")
+#tb.add_dependency_on(dut)
 
 # Complains about not finding signals
 sdffile = abspath("PE_7_1200mv_85c_v_slow.sdo")
@@ -46,6 +46,7 @@ lib.set_generic("clk_gen", "20ns")
 lib.set_generic("shift_wordlength", 3)
 lib.set_generic("pipeline", 3)
 lib.set_generic("file_name", abspath("tests.txt"))
+lib.set_generic("clk_period", "20ns")
 # lib.set_generic("file_name", abspath("testing.txt"))
 # Set if logic_op is an enum or binary
 # False: use enum

@@ -1,5 +1,5 @@
 Fitter report for PE
-Tue Sep 24 11:17:48 2024
+Thu Sep 26 14:16:21 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 Patches 0.02std SC Standard Edition
 
 
@@ -69,10 +69,10 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                                          ;
 +------------------------------------+--------------------------------------------------------------------+
-; Fitter Status                      ; Successful - Tue Sep 24 11:17:48 2024                              ;
+; Fitter Status                      ; Successful - Thu Sep 26 14:16:21 2024                              ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 Patches 0.02std SC Standard Edition ;
 ; Revision Name                      ; PE                                                                 ;
-; Top-level Entity Name              ; PE_bin                                                             ;
+; Top-level Entity Name              ; PE_bin_2                                                           ;
 ; Family                             ; Cyclone IV E                                                       ;
 ; Device                             ; EP4CE115F23C7                                                      ;
 ; Timing Models                      ; Final                                                              ;
@@ -161,8 +161,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
-;     Processors 3-12        ;   0.2%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processors 3-12        ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -1081,15 +1081,15 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +--------------+-------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                         ;
-+---------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------+-------------+--------------+
-; Compilation Hierarchy Node      ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                            ; Entity Name ; Library Name ;
-+---------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------+-------------+--------------+
-; |PE_bin                         ; 208 (208)   ; 66 (66)                   ; 0 (0)         ; 0           ; 0    ; 2            ; 0       ; 1         ; 46   ; 0            ; 142 (142)    ; 9 (9)             ; 57 (57)          ; |PE_bin                                        ; PE_bin      ; work         ;
-;    |lpm_mult:Mult0|             ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 2            ; 0       ; 1         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |PE_bin|lpm_mult:Mult0                         ; lpm_mult    ; work         ;
-;       |mult_v5t:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 2            ; 0       ; 1         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |PE_bin|lpm_mult:Mult0|mult_v5t:auto_generated ; mult_v5t    ; work         ;
-+---------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------+-------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                           ;
++---------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node      ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                              ; Entity Name ; Library Name ;
++---------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------+-------------+--------------+
+; |PE_bin_2                       ; 208 (208)   ; 66 (66)                   ; 0 (0)         ; 0           ; 0    ; 2            ; 0       ; 1         ; 46   ; 0            ; 142 (142)    ; 9 (9)             ; 57 (57)          ; |PE_bin_2                                        ; PE_bin_2    ; work         ;
+;    |lpm_mult:Mult0|             ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 2            ; 0       ; 1         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |PE_bin_2|lpm_mult:Mult0                         ; lpm_mult    ; work         ;
+;       |mult_v5t:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 2            ; 0       ; 1         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |PE_bin_2|lpm_mult:Mult0|mult_v5t:auto_generated ; mult_v5t    ; work         ;
++---------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1653,19 +1653,19 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
     Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X34_Y61 to location X45_Y73
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
 Info (11888): Total time spent on timing analysis during the Fitter is 0.07 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file /home/raswa151/courses/tsea84-labs/lab2/synth/output_files/PE.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1854 megabytes
-    Info: Processing ended: Tue Sep 24 11:17:48 2024
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Peak virtual memory: 1852 megabytes
+    Info: Processing ended: Thu Sep 26 14:16:21 2024
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +----------------------------+

@@ -21,7 +21,7 @@ entity tb_pe is
     pipeline         : integer := 0;
     logic_op         : boolean := false;
     file_name        : string;
-    clk_period       : time := 20 ns
+    clk_period       : time
     );
 end entity;
 
@@ -124,11 +124,6 @@ begin
   instantiate_pe :
   if logic_op generate
     PE1 : entity work.PE_bin
-      generic map(
-        wordlength       => wordlength,
-        shift_wordlength => shift_wordlength
-        --OP_length => OP_LENGTH
-        )
       port map(
         inputa    => data1.inputa,
         inputb    => data1.inputb,
@@ -142,10 +137,6 @@ begin
   else
     generate
       PE1 : entity work.PE_bin
-        generic map(
-          wordlength       => wordlength,
-          shift_wordlength => shift_wordlength
-          )
         port map(
           inputa    => data1.inputa,
           inputb    => data1.inputb,
