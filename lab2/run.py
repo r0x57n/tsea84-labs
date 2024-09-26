@@ -16,21 +16,21 @@ lib = vu.add_library("lib")
 # Add VHDL files for the standard design
 lib.add_source_files(join(root, "pe_types.vhdl"))
 lib.add_source_files(join(root, "PE_bin.vhdl"))
-lib.add_source_files(join(root, "tb_pe.vhdl"))
-
-# Verilog file
-# lib.add_source_files(join(root, "PE_bin.v"))
 
 # Add files required for the synthesized version
-#lib.add_source_files(join(root, "PE.vo"))
-lib.add_source_files(join(root, "PE_7_1200mv_85c_slow.vo"))
-lib.add_source_files("/courses/TSEA84/src/verilog/src/altera_primitives.v")
-lib.add_source_files("/courses/TSEA84/src/verilog/src/cycloneive_atoms.v")
+lib.add_source_files(join(root, "altera_primitives.v"))
+lib.add_source_files(join(root, "cycloneive_atoms.v"))
+lib.add_source_files([join(root, "PE_7_1200mv_85c_slow.vo"), join(root, "tb_pe.vhdl")])
 
+# Complains about not finding tb_pe.vhdl in lib
+tb = lib.get_source_file("tb_pe.vhdl")
+dut = lib.get_source_file("PE_7_1200mv_85c_slow.vo")
+tb.add_dependency_on(dut)
+
+# Complains about not finding signals
 sdffile = abspath("PE_7_1200mv_85c_v_slow.sdo")
 dut = "/tb_pe/instantiate_pe/PE1"
 lib.set_sim_option("modelsim.vsim_flags", [f"-sdftyp {dut}={sdffile}"])
-
 
 ## Set flags for coverage
 #lib.set_compile_option("modelsim.vcom_flags", ["+cover=bs"])

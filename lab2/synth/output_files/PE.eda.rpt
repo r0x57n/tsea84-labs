@@ -1,5 +1,5 @@
 EDA Netlist Writer report for PE
-Fri Sep 20 10:29:14 2024
+Tue Sep 24 11:17:56 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 Patches 0.02std SC Standard Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Sep 20 10:29:14 2024 ;
+; EDA Netlist Writer Status ; Successful - Tue Sep 24 11:17:56 2024 ;
 ; Revision Name             ; PE                                    ;
 ; Top-level Entity Name     ; PE_bin                                ;
 ; Family                    ; Cyclone IV E                          ;
@@ -89,7 +89,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 23.1std.0 Build 991 11/28/2023 Patches 0.02std SC Standard Edition
-    Info: Processing started: Fri Sep 20 10:29:14 2024
+    Info: Processing started: Tue Sep 24 11:17:55 2024
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off lab2-synth -c PE
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file PE_7_1200mv_85c_slow.vo in folder "/home/raswa151/courses/tsea84-labs/lab2/synth/simulation/modelsim/" for EDA simulation tool
@@ -101,9 +101,9 @@ Info (204019): Generated file PE_7_1200mv_0c_v_slow.sdo in folder "/home/raswa15
 Info (204019): Generated file PE_min_1200mv_0c_v_fast.sdo in folder "/home/raswa151/courses/tsea84-labs/lab2/synth/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file PE_v.sdo in folder "/home/raswa151/courses/tsea84-labs/lab2/synth/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 658 megabytes
-    Info: Processing ended: Fri Sep 20 10:29:14 2024
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 661 megabytes
+    Info: Processing ended: Tue Sep 24 11:17:56 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 

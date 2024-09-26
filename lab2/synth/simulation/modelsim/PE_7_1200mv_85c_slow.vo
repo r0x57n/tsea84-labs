@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 23.1std.0 Build 991 11/28/2023 Patches 0.02std SC Standard Edition"
 
-// DATE "09/20/2024 10:29:14"
+// DATE "09/24/2024 11:17:55"
 
 // 
 // Device: Altera EP4CE115F23C7 Package FBGA484
@@ -108,7 +108,7 @@ tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
 // synopsys translate_off
-//initial $sdf_annotate("PE_7_1200mv_85c_v_slow.sdo");
+initial $sdf_annotate("PE_7_1200mv_85c_v_slow.sdo");
 // synopsys translate_on
 
 wire \Mult0|auto_generated|mac_out2~dataout ;

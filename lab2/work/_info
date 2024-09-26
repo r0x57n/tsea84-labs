@@ -1,8 +1,9 @@
 m255
 K4
 z2
-!s11f MIXED_VERSIONS
-!s99 nomlopt
+Z0 !s99 nomlopt
+!s11f vlog 2021.3 2021.07, Jul 13 2021
+R0
 !s11e vcom 2021.3 2021.07, Jul 13 2021
 13
 !s112 1.1
@@ -10,200 +11,165 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/raswa151/courses/tsea84-labs/lab1
+Z1 d/home/raswa151/courses/tsea84-labs/lab1
 T_opt
 !s110 1725812301
 V=D?nzf@ofX;CGO:KZ;zZW1
 04 2 5 work pe start 1
 =1-001b213b2bbc-66ddce4c-d4ebb-1e991
-!s124 OEM100
-o-quiet -auto_acc_if_foreign -work work
-Z1 tCvgOpt 0
+Z2 !s124 OEM100
+Z3 o-quiet -auto_acc_if_foreign -work work
+Z4 tCvgOpt 0
 n@_opt
-OL;O;2021.3;73
-R0
+Z5 OL;O;2021.3;73
+R1
+T_opt1
+!s110 1727039278
+V@AXf^4ndhCUQ66;4Aj2K52
+04 6 5 work pe_bin start 1
+=1-001b213b2bbc-66f0872e-1f935-42c04
+R2
+R3
+R4
+n@_opt1
+R5
 vhard_block
-Z2 !s110 1726825056
+Z6 !s110 1727039136
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
 !i10b 1
 !s100 K5OD6C<9gc4OFXfM>i[482
 IAizzPOm@kTKYG<NI:zlUn0
-Z3 d/home/raswa151/courses/tsea84-labs/lab2
-Z4 w1726824867
-Z5 8PE_7_1200mv_85c_slow.vo
-Z6 FPE_7_1200mv_85c_slow.vo
-!i122 3
+Z8 d/home/raswa151/courses/tsea84-labs/lab2
+Z9 w1726826460
+Z10 8PE_7_1200mv_85c_slow.vo
+Z11 FPE_7_1200mv_85c_slow.vo
+!i122 6
 L0 5956 34
-Z7 VDg1SIo80bB@j0V0VzS_@n1
-Z8 OL;L;2021.3;73
+Z12 OL;L;2021.3;73
+31
+Z13 !s108 1727039136.000000
+Z14 !s107 PE_7_1200mv_85c_slow.vo|
+Z15 !s90 PE_7_1200mv_85c_slow.vo|
+!i113 0
+Z16 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vPE_bin
+R6
+R7
 r1
 !s85 0
-31
-Z9 !s108 1726825056.000000
-Z10 !s107 PE_7_1200mv_85c_slow.vo|
-Z11 !s90 PE_7_1200mv_85c_slow.vo|
-!i113 0
-Z12 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
-Epe
-Z13 w1725607378
-Z14 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
-Z15 DPx4 work 8 pe_types 0 22 ?;R0@47<7HNSY?hWO<Bd52
-Z16 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z17 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z18 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 2
-R0
-Z19 8PE.vhdl
-Z20 FPE.vhdl
-l0
-Z21 L11 1
-Vf8M5ME6JB^LWSNSG>IC?13
-!s100 g<WkHEbIzW8z?n[BKW;d`3
-Z22 OL;C;2021.3;73
-33
-Z23 !s110 1725812276
 !i10b 1
-Z24 !s108 1725812276.000000
-Z25 !s90 PE.vhdl|-2008|
-Z26 !s107 PE.vhdl|
-!i113 0
-Z27 o-2008
-Z28 tExplicit 1 CvgOpt 0
-Astart
+!s100 zc5Bm5KdDdXP?ImblbBhB2
+IZSAC01;7A0?JN<b=of66j1
+R8
+R9
+R10
+R11
+!i122 6
+L0 32 5923
+R12
+31
+R13
 R14
 R15
-R16
-R17
-R18
-DEx4 work 2 pe 0 22 f8M5ME6JB^LWSNSG>IC?13
-!i122 2
-l39
-L28 57
-Vjlk<eg78Dbb9>gF3UY4Vo3
-!s100 P1P>T5GO:HA?>C4SU1YGN2
-R22
-33
-R23
-!i10b 1
-R24
-R25
-R26
 !i113 0
-R27
-R28
-Epe_bin
-Z29 w1726736448
-R14
-Z30 DPx4 work 8 pe_types 0 22 dV4C9=ZjbQjG4g5W76n4G3
 R16
-R17
-R18
+R4
+n@p@e_bin
+Epe_bin
+Z17 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z18 DPx4 work 8 pe_types 0 22 dV4C9=ZjbQjG4g5W76n4G3
+Z19 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z20 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z21 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+33
+Z22 !s110 1726825088
+!i10b 1
+Z23 w1726736448
 !i122 5
-R3
-Z31 8PE_bin.vhdl
-Z32 FPE_bin.vhdl
+R8
+Z24 8PE_bin.vhdl
+Z25 FPE_bin.vhdl
 l0
-R21
+L11 1
 V6lXLY]DHd@;edg:Y[B`6h3
 !s100 One`fJ^[H2QJNgELeWCOb3
-R22
-33
-Z33 !s110 1726825088
-!i10b 1
-Z34 !s108 1726825088.000000
-Z35 !s90 PE_bin.vhdl|-2008|
-!s107 PE_bin.vhdl|
+Z26 OL;C;2021.3;73
+Z27 !s108 1726825088.000000
+Z28 !s90 PE_bin.vhdl|-2008|
+Z29 !s107 PE_bin.vhdl|
 !i113 0
-R27
-R28
+Z30 o-2008
+Z31 tExplicit 1 CvgOpt 0
 Astart
-R14
-R30
-R16
 R17
 R18
+R19
+R20
+R21
 DEx4 work 6 pe_bin 0 22 6lXLY]DHd@;edg:Y[B`6h3
+33
+R22
+!i10b 1
 !i122 5
 l48
 L28 147
 V3ddGY1lWLM^;8KCjTfSDK0
 !s100 A3XA4JmBUJ5U9FSMLSnf53
-R22
-33
-R33
-!i10b 1
-R34
-R35
-Z36 !s107 PE_bin.vhdl|
-!i113 0
+R26
 R27
 R28
-vPE_bin
-R2
-!i10b 1
-!s100 zc5Bm5KdDdXP?ImblbBhB2
-IZSAC01;7A0?JN<b=of66j1
-R3
-R4
-R5
-R6
-!i122 3
-L0 32 5923
-R7
-R8
-r1
-!s85 0
-31
-R9
-R10
-R11
+R29
 !i113 0
-R12
-R1
-n@p@e_bin
+R30
+R31
 Ppe_types
-R14
-R18
 R17
-R16
+R21
+R20
+R19
+33
+b1
+Z32 !s110 1726825081
+!i10b 1
+b1
 !i122 4
-Z37 w1726556002
-R3
-Z38 8pe_types.vhdl
-Z39 Fpe_types.vhdl
+Z33 w1726556002
+R8
+Z34 8pe_types.vhdl
+Z35 Fpe_types.vhdl
 l0
 L7 1
 VdV4C9=ZjbQjG4g5W76n4G3
 !s100 F2@kh>JlUG`YTYV4T^nW[0
-R22
-33
+R26
 b1
-Z40 !s110 1726825081
-!i10b 1
-Z41 !s108 1726825081.000000
-Z42 !s90 pe_types.vhdl|-2008|
-Z43 !s107 pe_types.vhdl|
+Z36 !s108 1726825081.000000
+Z37 !s90 pe_types.vhdl|-2008|
+Z38 !s107 pe_types.vhdl|
 !i113 0
-R27
-R28
-Bbody
 R30
-R14
+R31
+Bbody
 R18
 R17
-R16
+R21
+R20
+R19
+33
+R32
+!i10b 1
 !i122 4
 l0
 L17 1
 VK:fHSiPGNKUB^m=R9??SA3
 !s100 8=>OlkZ;ifP8OQLO9E4gL3
-R22
-33
-R40
-!i10b 1
-R41
-R42
-R43
+R26
+R36
+R37
+R38
 !i113 0
-R27
-R28
+R30
+R31

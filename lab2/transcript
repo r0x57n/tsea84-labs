@@ -11,33 +11,665 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-do pe_vhdl.do
-# vsim work.pe(start) 
-# Start time: 18:18:20 on Sep 08,2024
+# ** Warning: License feature 'msimviewer' will expire in 8 days.
+vsim work.pe_bin
+# vsim work.pe_bin 
+# Start time: 23:07:57 on Sep 22,2024
 # ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: License feature 'msimhdlsim' will expire in 8 days.
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading ieee.math_real(body)
 # Loading work.pe_types(body)
-# Loading work.pe(start)#1
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /pe
-do pe_vhdl.do
-# End time: 18:20:26 on Sep 08,2024, Elapsed time: 0:02:06
-# Errors: 0, Warnings: 1
-# vsim work.pe(start) 
-# Start time: 18:20:26 on Sep 08,2024
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.math_real(body)
-# Loading work.pe_types(body)
-# Loading work.pe(start)#1
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /pe
-# End time: 18:21:24 on Sep 08,2024, Elapsed time: 0:00:58
-# Errors: 0, Warnings: 1
+# Loading work.pe_bin(start)#1
+vsim work.PE_bin
+# End time: 23:08:15 on Sep 22,2024, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 0
+# vsim work.PE_bin 
+# Start time: 23:08:15 on Sep 22,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: PE_7_1200mv_85c_slow.vo(587): Module 'cycloneive_io_obuf' is not defined.
+#  For instance '\result[0]~output ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(600): Module 'cycloneive_io_obuf' is not defined.
+#  For instance '\result[1]~output ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(613): Module 'cycloneive_io_obuf' is not defined.
+#  For instance '\result[2]~output ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(626): Module 'cycloneive_io_obuf' is not defined.
+#  For instance '\result[3]~output ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(639): Module 'cycloneive_io_obuf' is not defined.
+#  For instance '\result[4]~output ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(652): Module 'cycloneive_io_obuf' is not defined.
+#  For instance '\result[5]~output ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(665): Module 'cycloneive_io_obuf' is not defined.
+#  For instance '\result[6]~output ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(678): Module 'cycloneive_io_obuf' is not defined.
+#  For instance '\result[7]~output ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(691): Module 'cycloneive_io_obuf' is not defined.
+#  For instance '\result[8]~output ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(704): Module 'cycloneive_io_obuf' is not defined.
+#  For instance '\result[9]~output ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(717): Module 'cycloneive_io_obuf' is not defined.
+#  For instance '\result[10]~output ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(730): Module 'cycloneive_io_obuf' is not defined.
+#  For instance '\result[11]~output ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(743): Module 'cycloneive_io_obuf' is not defined.
+#  For instance '\overflow~output ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(756): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\clk~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(766): Module 'cycloneive_clkctrl' is not defined.
+#  For instance '\clk~inputclkctrl ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(779): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\op[3]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(789): Module 'dffeas' is not defined.
+#  For instance '\reg_op[3] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(808): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\op[0]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(818): Module 'dffeas' is not defined.
+#  For instance '\reg_op[0] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(837): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\op[1]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(847): Module 'dffeas' is not defined.
+#  For instance '\reg_op[1] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(866): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\op[2]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(876): Module 'dffeas' is not defined.
+#  For instance '\reg_op[2] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(895): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux13~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(912): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputa[3]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(922): Module 'dffeas' is not defined.
+#  For instance '\reg_inputa[3]~_Duplicate_1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(941): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[0]~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(958): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputb[1]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(968): Module 'dffeas' is not defined.
+#  For instance '\reg_inputb[1] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(987): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputb[0]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(997): Module 'dffeas' is not defined.
+#  For instance '\reg_inputb[0] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1016): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add0~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1033): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add0~2 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1051): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[0]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1068): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputa[4]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1078): Module 'dffeas' is not defined.
+#  For instance '\reg_inputa[4]~_Duplicate_1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1097): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add1~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1114): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add1~2 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1132): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[1]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1149): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[1]~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1167): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputa[5]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1177): Module 'dffeas' is not defined.
+#  For instance '\reg_inputa[5]~_Duplicate_1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1196): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add1~4 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1214): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputb[2]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1224): Module 'dffeas' is not defined.
+#  For instance '\reg_inputb[2] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1243): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add0~4 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1261): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[2]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1279): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[2]~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1297): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputb[3]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1307): Module 'dffeas' is not defined.
+#  For instance '\reg_inputb[3] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1326): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add0~6 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1344): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputa[6]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1354): Module 'dffeas' is not defined.
+#  For instance '\reg_inputa[6]~_Duplicate_1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1373): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add1~6 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1391): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[3]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1408): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[3]~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1426): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputa[7]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1436): Module 'dffeas' is not defined.
+#  For instance '\reg_inputa[7]~_Duplicate_1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1455): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add1~8 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1473): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputb[4]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1483): Module 'dffeas' is not defined.
+#  For instance '\reg_inputb[4] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1502): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add0~8 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1520): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[4]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1538): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[4]~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1556): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputb[5]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1566): Module 'dffeas' is not defined.
+#  For instance '\reg_inputb[5] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1585): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add0~10 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1603): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputa[8]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1613): Module 'dffeas' is not defined.
+#  For instance '\reg_inputa[8]~_Duplicate_1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1632): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add1~10 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1650): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[5]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1668): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[5]~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1686): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputb[6]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1696): Module 'dffeas' is not defined.
+#  For instance '\reg_inputb[6] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1715): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add0~12 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1733): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputa[9]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1743): Module 'dffeas' is not defined.
+#  For instance '\reg_inputa[9]~_Duplicate_1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1762): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add1~12 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1780): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[6]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1798): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[6]~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1816): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputb[7]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1826): Module 'dffeas' is not defined.
+#  For instance '\reg_inputb[7] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1845): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputa[10]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1855): Module 'dffeas' is not defined.
+#  For instance '\reg_inputa[10]~_Duplicate_1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1874): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add1~14 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1892): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[7]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1910): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add0~14 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1928): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[7]~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1946): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputa[11]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1956): Module 'dffeas' is not defined.
+#  For instance '\reg_inputa[11]~_Duplicate_1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1975): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add1~16 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(1993): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputb[8]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2003): Module 'dffeas' is not defined.
+#  For instance '\reg_inputb[8] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2022): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[8]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2040): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add0~16 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2058): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[8]~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2076): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputb[9]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2086): Module 'dffeas' is not defined.
+#  For instance '\reg_inputb[9] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2105): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add0~18 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2123): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add1~18 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2140): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[9]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2157): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[9]~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2175): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputb[10]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2185): Module 'dffeas' is not defined.
+#  For instance '\reg_inputb[10] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2204): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[10]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2222): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add0~20 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2240): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[10]~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2257): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Equal0~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2274): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Equal1~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2291): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\tmp_inputb~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2308): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputb[11]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2318): Module 'dffeas' is not defined.
+#  For instance '\reg_inputb[11] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2337): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add0~22 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2355): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[11]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2372): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[11]~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2390): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[11]~2 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2407): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add0~24 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2424): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[12]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2441): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputa[0]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2451): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputa[1]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2461): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\inputa[2]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2471): Module 'dffeas' is not defined.
+#  For instance '\reg_inputa[2]~_Duplicate_1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2490): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[0]~2 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2508): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputb[0]~3 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2526): Module 'cycloneive_mac_mult' is not defined.
+#  For instance '\Mult0|auto_generated|mac_mult1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2548): Module 'cycloneive_mac_out' is not defined.
+#  For instance '\Mult0|auto_generated|mac_out2 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2567): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux13~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2584): Module 'dffeas' is not defined.
+#  For instance '\mul_bits_1[12] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2603): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux25~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2620): Module 'dffeas' is not defined.
+#  For instance '\mul_bits_1[11] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2639): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\LessThan0~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2656): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\shift_val[1]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2666): Module 'dffeas' is not defined.
+#  For instance '\reg_shift_val[1] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2685): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\shift_val[0]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2695): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\reg_shift_val[0]~feeder ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2712): Module 'dffeas' is not defined.
+#  For instance '\reg_shift_val[0] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2731): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2748): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\shift_val[2]~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2758): Module 'dffeas' is not defined.
+#  For instance '\reg_shift_val[2] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2777): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux1~3 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2794): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux1~4 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2811): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputa[10]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2828): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputa[9]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2845): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputa[8]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2862): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputa[7]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2879): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputa[6]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2896): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputa[5]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2913): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputa[4]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2930): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputa[3]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2947): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputa[2]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2964): Module 'dffeas' is not defined.
+#  For instance '\reg_inputa[1]~_Duplicate_1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(2983): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputa[1]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3000): Module 'dffeas' is not defined.
+#  For instance '\reg_inputa[0]~_Duplicate_1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3019): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\operations:tmp_inputa[0]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3036): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add2~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3054): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add2~2 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3073): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add2~4 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3091): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add2~6 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3110): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add2~8 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3128): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add2~10 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3147): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add2~12 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3165): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add2~14 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3184): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add2~16 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3202): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add2~18 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3221): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add2~20 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3239): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add2~22 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3258): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add2~24 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3275): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add3~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3292): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add3~2 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3310): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add3~4 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3328): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add3~6 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3346): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add3~8 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3364): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add3~10 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3382): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add3~12 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3400): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add3~14 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3418): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add3~16 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3436): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add3~18 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3454): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add3~20 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3472): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add3~22 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3490): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Add3~24 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3507): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux0~2 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3524): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux0~3 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3541): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux0~4 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3558): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux1~2 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3575): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux0~6 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3592): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux0~5 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3609): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux1~5 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3626): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux1~6 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3643): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux1~7 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3660): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux1~9 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3677): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux1~8 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3694): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3711): Module 'dffeas' is not defined.
+#  For instance '\before_saturation_1[11] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3730): Module 'dffeas' is not defined.
+#  For instance '\reg_op_1[1] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3749): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\reg_op_1[3]~feeder ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3766): Module 'dffeas' is not defined.
+#  For instance '\reg_op_1[3] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3785): Module 'dffeas' is not defined.
+#  For instance '\reg_op_1[0] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3804): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\reg_op_1[2]~feeder ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3821): Module 'dffeas' is not defined.
+#  For instance '\reg_op_1[2] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3840): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Equal7~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3857): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\reg_result[0]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3874): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux10~5 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3891): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux10~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3908): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux10~3 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3925): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux10~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3942): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux10~4 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3959): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux9~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3976): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux10~2 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(3993): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux9~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4010): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux10~6 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4027): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux10~7 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4044): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~7 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4061): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~4 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4078): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~3 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4095): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~5 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4112): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux11~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4129): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux11~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4146): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~2 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4163): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~6 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4180): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\before_saturation_1[0]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4197): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux7~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4214): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux7~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4231): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux8~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4248): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux8~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4265): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~9 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4282): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux5~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4299): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux5~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4316): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux6~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4333): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux6~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4350): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~8 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4367): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~10 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4384): Module 'dffeas' is not defined.
+#  For instance '\before_saturation_1[0] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4403): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~31 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4420): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~23 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4437): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~32 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4454): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~16 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4471): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux4~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4488): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux4~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4505): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~15 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4522): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~17 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4539): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~33 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4556): Module 'dffeas' is not defined.
+#  For instance '\before_saturation_1[1] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4575): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~28 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4592): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~29 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4609): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux3~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4626): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux3~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4643): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~26 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4660): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~27 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4677): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~30 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4694): Module 'dffeas' is not defined.
+#  For instance '\before_saturation_1[2] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4713): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux2~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4730): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux2~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4747): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~21 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4764): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~22 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4781): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~24 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4798): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~25 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4815): Module 'dffeas' is not defined.
+#  For instance '\before_saturation_1[3] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4834): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Equal5~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4851): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~14 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4868): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~13 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4885): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\before_saturation_1[9]~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4902): Module 'dffeas' is not defined.
+#  For instance '\before_saturation_1[9] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4921): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~19 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4938): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~11 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4955): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\before_saturation_1[8]~2 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4972): Module 'dffeas' is not defined.
+#  For instance '\before_saturation_1[8] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(4991): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\before_saturation_1[6]~4 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5008): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~35 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5025): Module 'dffeas' is not defined.
+#  For instance '\before_saturation_1[6] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5044): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\before_saturation_1[7]~3 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5061): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~34 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5078): Module 'dffeas' is not defined.
+#  For instance '\before_saturation_1[7] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5097): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Equal5~2 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5114): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~20 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5131): Module 'dffeas' is not defined.
+#  For instance '\before_saturation_1[4] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5150): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~18 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5167): Module 'dffeas' is not defined.
+#  For instance '\before_saturation_1[5] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5186): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\ShiftRight0~12 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5203): Module 'dffeas' is not defined.
+#  For instance '\before_saturation_1[10] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5222): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Equal5~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5239): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Equal5~3 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5256): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux37~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5273): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux37~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5290): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux37~2 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5307): Module 'dffeas' is not defined.
+#  For instance '\reg_inputb_1[11] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5326): Module 'dffeas' is not defined.
+#  For instance '\reg_inputa_1[11] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5345): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux37~3 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5362): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux37~4 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5379): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\Mux37~5 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5396): Module 'cycloneive_io_ibuf' is not defined.
+#  For instance '\sat~input ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5406): Module 'dffeas' is not defined.
+#  For instance 'reg_sat' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5425): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\reg_sat_1~feeder ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5442): Module 'dffeas' is not defined.
+#  For instance 'reg_sat_1' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5461): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\saturation~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5478): Module 'dffeas' is not defined.
+#  For instance '\reg_result[0] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5497): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\signedoutput[1]~0 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5514): Module 'dffeas' is not defined.
+#  For instance '\reg_result[1] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5533): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\signedoutput[2]~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5550): Module 'dffeas' is not defined.
+#  For instance '\reg_result[2] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5569): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\signedoutput[3]~2 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5586): Module 'dffeas' is not defined.
+#  For instance '\reg_result[3] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5605): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\signedoutput[4]~3 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5622): Module 'dffeas' is not defined.
+#  For instance '\reg_result[4] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5641): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\signedoutput[5]~4 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5658): Module 'dffeas' is not defined.
+#  For instance '\reg_result[5] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5677): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\signedoutput[6]~5 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5694): Module 'dffeas' is not defined.
+#  For instance '\reg_result[6] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5713): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\signedoutput[7]~6 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5730): Module 'dffeas' is not defined.
+#  For instance '\reg_result[7] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5749): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\signedoutput[8]~7 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5766): Module 'dffeas' is not defined.
+#  For instance '\reg_result[8] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5785): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\signedoutput[9]~8 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5802): Module 'dffeas' is not defined.
+#  For instance '\reg_result[9] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5821): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\signedoutput[10]~9 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5838): Module 'dffeas' is not defined.
+#  For instance '\reg_result[10] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5857): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\reg_result[11]~1 ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5874): Module 'dffeas' is not defined.
+#  For instance '\reg_result[11] ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5893): Module 'cycloneive_lcell_comb' is not defined.
+#  For instance '\reg_overflow~feeder ' at path 'PE_bin'
+# ** Error: PE_7_1200mv_85c_slow.vo(5910): Module 'dffeas' is not defined.
+#  For instance 'reg_overflow' at path 'PE_bin'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=319, Warnings=0.
+# Error loading design
+# End time: 23:08:15 on Sep 22,2024, Elapsed time: 0:00:00
+# Errors: 319, Warnings: 0
