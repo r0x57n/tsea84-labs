@@ -1,0 +1,440 @@
+===========================================================================
+===========================================================================
+[mCompiling into lib:       pe_types.vhdl                                                                                                [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into lib:       altera_primitives.v                                                                                          [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into lib:       cycloneive_atoms.v                                                                                           [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into lib:       PE_bin.vhdl                                                                                                  [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into lib:       PE_7_1200mv_85c_slow.vo                                                                                      [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/string_ops/src/string_ops.vhd                        [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/path/src/path.vhd                                    [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/logging/src/print_pkg.vhd                            [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/logging/src/location_pkg.vhd                         [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/logging/src/location_pkg-body-2008m.vhd              [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/types.vhd                             [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/event_common_pkg.vhd                  [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/event_private_pkg.vhd                 [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/data_types_private_pkg.vhd            [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/codec_builder.vhd                     [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/codec_builder-2008p.vhd               [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/codec.vhd                             [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/codec-2008p.vhd                       [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/api/external_string_pkg.vhd           [0m[32;1mpassed[0m[m
+[0m[m** Warning: /home/raswa151/.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/api/external_string_pkg.vhd(40): Function 'read_char' may complete without a RETURN at line 39.
+** Warning: /home/raswa151/.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/api/external_string_pkg.vhd(46): Function 'get_ptr' may complete without a RETURN at line 45.
+[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg.vhd                    [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/logging/src/ansi_pkg.vhd                             [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/logging/src/log_levels_pkg.vhd                       [0m[32;1mpassed[0m[m
+[0m[m** Warning: /home/raswa151/.local/lib/python3.11/site-packages/vunit/vhdl/logging/src/log_levels_pkg.vhd(33): (vcom-1246) Range 1 to 0 is null.
+[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg-body-2002p.vhd         [0m[32;1mpassed[0m[m
+[0m[m** Warning: /home/raswa151/.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg-body-2002p.vhd(289): Function 'to_string' may complete without a RETURN at line 287.
+[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/byte_vector_ptr_pkg.vhd               [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/api/external_integer_vector_pkg.vhd   [0m[32;1mpassed[0m[m
+[0m[m** Warning: /home/raswa151/.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/api/external_integer_vector_pkg.vhd(40): Function 'read_integer' may complete without a RETURN at line 39.
+** Warning: /home/raswa151/.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/api/external_integer_vector_pkg.vhd(46): Function 'get_ptr' may complete without a RETURN at line 45.
+[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg.vhd            [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/logging/src/log_handler_pkg.vhd                      [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/logging/src/print_pkg-body.vhd                       [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/logging/src/file_pkg.vhd                             [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/logging/src/log_handler_pkg-body.vhd                 [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg-body-2002p.vhd [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/integer_array_pkg.vhd                 [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/queue_pkg.vhd                         [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/string_ptr_pool_pkg.vhd               [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/queue_pkg-body.vhd                    [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/queue_pkg-2008p.vhd                   [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pool_pkg.vhd       [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/queue_pool_pkg.vhd                    [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/integer_array_pkg-body.vhd            [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/dict_pkg.vhd                          [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/dict_pkg-2008p.vhd                    [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/dict_pkg-body.vhd                     [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/data_types_context.vhd                [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/core/src/stop_pkg.vhd                                [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd                         [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/core/src/core_pkg.vhd                                [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/logging/src/log_levels_pkg-body.vhd                  [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/id_pkg.vhd                            [0m[32;1mpassed[0m[m
+[0m[m** Warning: /home/raswa151/.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/id_pkg.vhd(351): (vcom-1246) Range 1 to 0 is null.
+[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/logging/src/logger_pkg.vhd                           [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/logging/src/log_deprecated_pkg.vhd                   [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/dictionary/src/dictionary.vhd                        [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/run/src/run_types.vhd                                [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/run/src/runner_pkg.vhd                               [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/run/src/run_api.vhd                                  [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/logging/src/logger_pkg-body.vhd                      [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/data_types/src/event_pkg.vhd                         [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/check/src/checker_pkg.vhd                            [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/run/src/run_deprecated_pkg.vhd                       [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/vunit_run_context.vhd                                [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/run/src/run.vhd                                      [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/check/src/checker_pkg-body.vhd                       [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/check/src/check_api.vhd                              [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/check/src/check_deprecated_pkg.vhd                   [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/vunit_context.vhd                                    [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into lib:       tb_pe.vhdl                                                                                                   [0m[32;1mpassed[0m[m
+[0m[m[0m[mCompiling into vunit_lib: ../../../.local/lib/python3.11/site-packages/vunit/vhdl/check/src/check.vhd                                  [0m[32;1mpassed[0m[m
+[0m[m[0m[32;1mCompile passed
+[0m
+Starting lib.tb_pe.all
+Output file: /home/raswa151/courses/tsea84-labs/lab2/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/output.txt
+# vsim -modelsimini /home/raswa151/courses/tsea84-labs/lab2/vunit_out/modelsim/modelsim.ini -wlf /home/raswa151/courses/tsea84-labs/lab2/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_pe(tb) -sdftyp "/tb_pe/instantiate_pe/PE1=/home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo" -L vunit_lib -L lib -g/tb_pe/logic_op=True -g/tb_pe/file_name=/home/raswa151/courses/tsea84-labs/lab2/tests.txt -g/tb_pe/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/raswa151/courses/tsea84-labs/lab2/vunit_out/test_output/lib.tb_pe.all_0c4a351670bedfa749ba6063994c563f8fcce097/,tb path : /home/raswa151/courses/tsea84-labs/lab2/,use_color : true" -g/tb_pe/pipeline=3 -g/tb_pe/wordlength=12 -g/tb_pe/shift_wordlength=3 
+# Start time: 10:52:59 on Sep 26,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-1946) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1616): Can't resolve SDF pathname "datab_reg" - instance not found.
+# ** Warning: (vopt-1946) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1647): Can't resolve SDF pathname "mac_multiply" - instance not found.
+# ** Warning: /home/raswa151/.local/lib/python3.11/site-packages/vunit/vhdl/string_ops/src/string_ops.vhd(488): (vopt-1083) Implicit array operator "=" always returns FALSE (left length 1 is not equal to right length 0).
+# ** Warning: /home/raswa151/.local/lib/python3.11/site-packages/vunit/vhdl/string_ops/src/string_ops.vhd(565): (vopt-1083) Implicit array operator "=" always returns FALSE (left length 1 is not equal to right length 0).
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=4.
+# //  ModelSim SE-64 2021.3 Jul 13 2021 Linux 4.18.0-553.22.1.el8_10.x86_64
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(383): Failed to find INSTANCE '\Add0~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(843): Failed to find INSTANCE '\Add0~10 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(948): Failed to find INSTANCE '\Add0~12 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1107): Failed to find INSTANCE '\Add0~14 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1211): Failed to find INSTANCE '\Add0~16 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1264): Failed to find INSTANCE '\Add0~18 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(393): Failed to find INSTANCE '\Add0~2 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1360): Failed to find INSTANCE '\Add0~20 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1455): Failed to find INSTANCE '\Add0~22 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1517): Failed to find INSTANCE '\Add0~24 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(562): Failed to find INSTANCE '\Add0~4 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(631): Failed to find INSTANCE '\Add0~6 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(774): Failed to find INSTANCE '\Add0~8 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(446): Failed to find INSTANCE '\Add1~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(880): Failed to find INSTANCE '\Add1~10 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(985): Failed to find INSTANCE '\Add1~12 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1077): Failed to find INSTANCE '\Add1~14 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1159): Failed to find INSTANCE '\Add1~16 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1278): Failed to find INSTANCE '\Add1~18 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(456): Failed to find INSTANCE '\Add1~2 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(525): Failed to find INSTANCE '\Add1~4 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(668): Failed to find INSTANCE '\Add1~6 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(737): Failed to find INSTANCE '\Add1~8 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2045): Failed to find INSTANCE '\Add2~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2128): Failed to find INSTANCE '\Add2~10 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2145): Failed to find INSTANCE '\Add2~12 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2162): Failed to find INSTANCE '\Add2~14 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2179): Failed to find INSTANCE '\Add2~16 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2196): Failed to find INSTANCE '\Add2~18 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2060): Failed to find INSTANCE '\Add2~2 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2213): Failed to find INSTANCE '\Add2~20 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2230): Failed to find INSTANCE '\Add2~22 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2247): Failed to find INSTANCE '\Add2~24 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2077): Failed to find INSTANCE '\Add2~4 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2094): Failed to find INSTANCE '\Add2~6 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2111): Failed to find INSTANCE '\Add2~8 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2260): Failed to find INSTANCE '\Add3~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2326): Failed to find INSTANCE '\Add3~10 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2340): Failed to find INSTANCE '\Add3~12 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2354): Failed to find INSTANCE '\Add3~14 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2368): Failed to find INSTANCE '\Add3~16 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2382): Failed to find INSTANCE '\Add3~18 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2270): Failed to find INSTANCE '\Add3~2 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2396): Failed to find INSTANCE '\Add3~20 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2410): Failed to find INSTANCE '\Add3~22 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2424): Failed to find INSTANCE '\Add3~24 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2284): Failed to find INSTANCE '\Add3~4 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2298): Failed to find INSTANCE '\Add3~6 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2312): Failed to find INSTANCE '\Add3~8 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1390): Failed to find INSTANCE '\Equal0~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1405): Failed to find INSTANCE '\Equal1~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3950): Failed to find INSTANCE '\Equal5~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3608): Failed to find INSTANCE '\Equal5~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3846): Failed to find INSTANCE '\Equal5~2 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3966): Failed to find INSTANCE '\Equal5~3 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2713): Failed to find INSTANCE '\Equal7~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1731): Failed to find INSTANCE '\LessThan0~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1616): Failed to find INSTANCE '\Mult0|auto_generated|mac_mult1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1616): Failed to find INSTANCE 'datab_reg'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1647): Failed to find INSTANCE 'mac_multiply'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1670): Failed to find INSTANCE '\Mult0|auto_generated|mac_out2 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2435): Failed to find INSTANCE '\Mux0~2 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2451): Failed to find INSTANCE '\Mux0~3 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2467): Failed to find INSTANCE '\Mux0~4 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2513): Failed to find INSTANCE '\Mux0~5 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2497): Failed to find INSTANCE '\Mux0~6 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2759): Failed to find INSTANCE '\Mux10~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2789): Failed to find INSTANCE '\Mux10~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2833): Failed to find INSTANCE '\Mux10~2 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2775): Failed to find INSTANCE '\Mux10~3 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2803): Failed to find INSTANCE '\Mux10~4 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2743): Failed to find INSTANCE '\Mux10~5 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2863): Failed to find INSTANCE '\Mux10~6 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2879): Failed to find INSTANCE '\Mux10~7 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2959): Failed to find INSTANCE '\Mux11~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2975): Failed to find INSTANCE '\Mux11~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(285): Failed to find INSTANCE '\Mux13~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1679): Failed to find INSTANCE '\Mux13~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2481): Failed to find INSTANCE '\Mux1~2 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1834): Failed to find INSTANCE '\Mux1~3 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1850): Failed to find INSTANCE '\Mux1~4 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2529): Failed to find INSTANCE '\Mux1~5 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2545): Failed to find INSTANCE '\Mux1~6 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2561): Failed to find INSTANCE '\Mux1~7 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2591): Failed to find INSTANCE '\Mux1~8 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2575): Failed to find INSTANCE '\Mux1~9 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1705): Failed to find INSTANCE '\Mux25~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3500): Failed to find INSTANCE '\Mux2~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3516): Failed to find INSTANCE '\Mux2~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3980): Failed to find INSTANCE '\Mux37~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3996): Failed to find INSTANCE '\Mux37~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4012): Failed to find INSTANCE '\Mux37~2 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4056): Failed to find INSTANCE '\Mux37~3 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4071): Failed to find INSTANCE '\Mux37~4 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4087): Failed to find INSTANCE '\Mux37~5 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3408): Failed to find INSTANCE '\Mux3~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3424): Failed to find INSTANCE '\Mux3~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3287): Failed to find INSTANCE '\Mux4~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3303): Failed to find INSTANCE '\Mux4~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3115): Failed to find INSTANCE '\Mux5~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3131): Failed to find INSTANCE '\Mux5~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3147): Failed to find INSTANCE '\Mux6~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3163): Failed to find INSTANCE '\Mux6~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3037): Failed to find INSTANCE '\Mux7~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3053): Failed to find INSTANCE '\Mux7~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3069): Failed to find INSTANCE '\Mux8~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3085): Failed to find INSTANCE '\Mux8~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2817): Failed to find INSTANCE '\Mux9~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2847): Failed to find INSTANCE '\Mux9~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1799): Failed to find INSTANCE '\ShiftRight0~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2607): Failed to find INSTANCE '\ShiftRight0~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3193): Failed to find INSTANCE '\ShiftRight0~10 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3702): Failed to find INSTANCE '\ShiftRight0~11 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3920): Failed to find INSTANCE '\ShiftRight0~12 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3638): Failed to find INSTANCE '\ShiftRight0~13 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3624): Failed to find INSTANCE '\ShiftRight0~14 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3319): Failed to find INSTANCE '\ShiftRight0~15 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3273): Failed to find INSTANCE '\ShiftRight0~16 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3333): Failed to find INSTANCE '\ShiftRight0~17 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3890): Failed to find INSTANCE '\ShiftRight0~18 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3686): Failed to find INSTANCE '\ShiftRight0~19 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2991): Failed to find INSTANCE '\ShiftRight0~2 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3862): Failed to find INSTANCE '\ShiftRight0~20 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3532): Failed to find INSTANCE '\ShiftRight0~21 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3548): Failed to find INSTANCE '\ShiftRight0~22 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3243): Failed to find INSTANCE '\ShiftRight0~23 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3564): Failed to find INSTANCE '\ShiftRight0~24 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3580): Failed to find INSTANCE '\ShiftRight0~25 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3440): Failed to find INSTANCE '\ShiftRight0~26 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3456): Failed to find INSTANCE '\ShiftRight0~27 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3377): Failed to find INSTANCE '\ShiftRight0~28 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3392): Failed to find INSTANCE '\ShiftRight0~29 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2927): Failed to find INSTANCE '\ShiftRight0~3 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3472): Failed to find INSTANCE '\ShiftRight0~30 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3227): Failed to find INSTANCE '\ShiftRight0~31 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3257): Failed to find INSTANCE '\ShiftRight0~32 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3347): Failed to find INSTANCE '\ShiftRight0~33 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3812): Failed to find INSTANCE '\ShiftRight0~34 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3764): Failed to find INSTANCE '\ShiftRight0~35 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2911): Failed to find INSTANCE '\ShiftRight0~4 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2943): Failed to find INSTANCE '\ShiftRight0~5 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3007): Failed to find INSTANCE '\ShiftRight0~6 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2895): Failed to find INSTANCE '\ShiftRight0~7 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3179): Failed to find INSTANCE '\ShiftRight0~8 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3101): Failed to find INSTANCE '\ShiftRight0~9 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3209): Failed to find INSTANCE '\before_saturation_1[0] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3023): Failed to find INSTANCE '\before_saturation_1[0]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3936): Failed to find INSTANCE '\before_saturation_1[10] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2623): Failed to find INSTANCE '\before_saturation_1[11] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3363): Failed to find INSTANCE '\before_saturation_1[1] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3486): Failed to find INSTANCE '\before_saturation_1[2] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3594): Failed to find INSTANCE '\before_saturation_1[3] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3876): Failed to find INSTANCE '\before_saturation_1[4] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3906): Failed to find INSTANCE '\before_saturation_1[5] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3780): Failed to find INSTANCE '\before_saturation_1[6] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3750): Failed to find INSTANCE '\before_saturation_1[6]~4 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3828): Failed to find INSTANCE '\before_saturation_1[7] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3798): Failed to find INSTANCE '\before_saturation_1[7]~3 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3732): Failed to find INSTANCE '\before_saturation_1[8] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3718): Failed to find INSTANCE '\before_saturation_1[8]~2 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3668): Failed to find INSTANCE '\before_saturation_1[9] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(3654): Failed to find INSTANCE '\before_saturation_1[9]~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(175): Failed to find INSTANCE '\clk~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(184): Failed to find INSTANCE '\clk~inputclkctrl '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1544): Failed to find INSTANCE '\inputa[0]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1054): Failed to find INSTANCE '\inputa[10]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1136): Failed to find INSTANCE '\inputa[11]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1553): Failed to find INSTANCE '\inputa[1]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1562): Failed to find INSTANCE '\inputa[2]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(301): Failed to find INSTANCE '\inputa[3]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(423): Failed to find INSTANCE '\inputa[4]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(502): Failed to find INSTANCE '\inputa[5]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(645): Failed to find INSTANCE '\inputa[6]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(714): Failed to find INSTANCE '\inputa[7]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(857): Failed to find INSTANCE '\inputa[8]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(962): Failed to find INSTANCE '\inputa[9]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(360): Failed to find INSTANCE '\inputb[0]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1321): Failed to find INSTANCE '\inputb[10]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1432): Failed to find INSTANCE '\inputb[11]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(337): Failed to find INSTANCE '\inputb[1]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(539): Failed to find INSTANCE '\inputb[2]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(608): Failed to find INSTANCE '\inputb[3]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(751): Failed to find INSTANCE '\inputb[4]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(820): Failed to find INSTANCE '\inputb[5]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(925): Failed to find INSTANCE '\inputb[6]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1031): Failed to find INSTANCE '\inputb[7]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1173): Failed to find INSTANCE '\inputb[8]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1241): Failed to find INSTANCE '\inputb[9]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1717): Failed to find INSTANCE '\mul_bits_1[11] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1691): Failed to find INSTANCE '\mul_bits_1[12] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(216): Failed to find INSTANCE '\op[0]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(239): Failed to find INSTANCE '\op[1]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(262): Failed to find INSTANCE '\op[2]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(193): Failed to find INSTANCE '\op[3]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2032): Failed to find INSTANCE '\operations:tmp_inputa[0]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1864): Failed to find INSTANCE '\operations:tmp_inputa[10]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2004): Failed to find INSTANCE '\operations:tmp_inputa[1]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1976): Failed to find INSTANCE '\operations:tmp_inputa[2]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1962): Failed to find INSTANCE '\operations:tmp_inputa[3]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1948): Failed to find INSTANCE '\operations:tmp_inputa[4]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1934): Failed to find INSTANCE '\operations:tmp_inputa[5]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1920): Failed to find INSTANCE '\operations:tmp_inputa[6]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1906): Failed to find INSTANCE '\operations:tmp_inputa[7]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1892): Failed to find INSTANCE '\operations:tmp_inputa[8]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1878): Failed to find INSTANCE '\operations:tmp_inputa[9]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(407): Failed to find INSTANCE '\operations:tmp_inputb[0]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(324): Failed to find INSTANCE '\operations:tmp_inputb[0]~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1585): Failed to find INSTANCE '\operations:tmp_inputb[0]~2 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1600): Failed to find INSTANCE '\operations:tmp_inputb[0]~3 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1344): Failed to find INSTANCE '\operations:tmp_inputb[10]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1374): Failed to find INSTANCE '\operations:tmp_inputb[10]~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1469): Failed to find INSTANCE '\operations:tmp_inputb[11]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1485): Failed to find INSTANCE '\operations:tmp_inputb[11]~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1501): Failed to find INSTANCE '\operations:tmp_inputb[11]~2 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1528): Failed to find INSTANCE '\operations:tmp_inputb[12]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(470): Failed to find INSTANCE '\operations:tmp_inputb[1]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(486): Failed to find INSTANCE '\operations:tmp_inputb[1]~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(576): Failed to find INSTANCE '\operations:tmp_inputb[2]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(592): Failed to find INSTANCE '\operations:tmp_inputb[2]~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(682): Failed to find INSTANCE '\operations:tmp_inputb[3]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(698): Failed to find INSTANCE '\operations:tmp_inputb[3]~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(788): Failed to find INSTANCE '\operations:tmp_inputb[4]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(804): Failed to find INSTANCE '\operations:tmp_inputb[4]~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(894): Failed to find INSTANCE '\operations:tmp_inputb[5]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(909): Failed to find INSTANCE '\operations:tmp_inputb[5]~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(999): Failed to find INSTANCE '\operations:tmp_inputb[6]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1015): Failed to find INSTANCE '\operations:tmp_inputb[6]~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1091): Failed to find INSTANCE '\operations:tmp_inputb[7]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1121): Failed to find INSTANCE '\operations:tmp_inputb[7]~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1196): Failed to find INSTANCE '\operations:tmp_inputb[8]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1225): Failed to find INSTANCE '\operations:tmp_inputb[8]~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1289): Failed to find INSTANCE '\operations:tmp_inputb[9]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1305): Failed to find INSTANCE '\operations:tmp_inputb[9]~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(165): Failed to find INSTANCE '\overflow~output '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2018): Failed to find INSTANCE '\reg_inputa[0]~_Duplicate_1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1063): Failed to find INSTANCE '\reg_inputa[10]~_Duplicate_1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1145): Failed to find INSTANCE '\reg_inputa[11]~_Duplicate_1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1990): Failed to find INSTANCE '\reg_inputa[1]~_Duplicate_1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1571): Failed to find INSTANCE '\reg_inputa[2]~_Duplicate_1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(310): Failed to find INSTANCE '\reg_inputa[3]~_Duplicate_1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(432): Failed to find INSTANCE '\reg_inputa[4]~_Duplicate_1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(511): Failed to find INSTANCE '\reg_inputa[5]~_Duplicate_1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(654): Failed to find INSTANCE '\reg_inputa[6]~_Duplicate_1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(723): Failed to find INSTANCE '\reg_inputa[7]~_Duplicate_1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(866): Failed to find INSTANCE '\reg_inputa[8]~_Duplicate_1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(971): Failed to find INSTANCE '\reg_inputa[9]~_Duplicate_1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4042): Failed to find INSTANCE '\reg_inputa_1[11] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(369): Failed to find INSTANCE '\reg_inputb[0] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1330): Failed to find INSTANCE '\reg_inputb[10] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1441): Failed to find INSTANCE '\reg_inputb[11] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(346): Failed to find INSTANCE '\reg_inputb[1] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(548): Failed to find INSTANCE '\reg_inputb[2] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(617): Failed to find INSTANCE '\reg_inputb[3] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(760): Failed to find INSTANCE '\reg_inputb[4] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(829): Failed to find INSTANCE '\reg_inputb[5] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(934): Failed to find INSTANCE '\reg_inputb[6] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1040): Failed to find INSTANCE '\reg_inputb[7] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1182): Failed to find INSTANCE '\reg_inputb[8] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1250): Failed to find INSTANCE '\reg_inputb[9] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4028): Failed to find INSTANCE '\reg_inputb_1[11] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(225): Failed to find INSTANCE '\reg_op[0] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(248): Failed to find INSTANCE '\reg_op[1] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(271): Failed to find INSTANCE '\reg_op[2] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(202): Failed to find INSTANCE '\reg_op[3] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2675): Failed to find INSTANCE '\reg_op_1[0] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2637): Failed to find INSTANCE '\reg_op_1[1] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2699): Failed to find INSTANCE '\reg_op_1[2] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2689): Failed to find INSTANCE '\reg_op_1[2]~feeder '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2661): Failed to find INSTANCE '\reg_op_1[3] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2651): Failed to find INSTANCE '\reg_op_1[3]~feeder '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4512): Failed to find INSTANCE '\reg_overflow~feeder '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4162): Failed to find INSTANCE '\reg_result[0] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(2729): Failed to find INSTANCE '\reg_result[0]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4466): Failed to find INSTANCE '\reg_result[10] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4494): Failed to find INSTANCE '\reg_result[11] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4480): Failed to find INSTANCE '\reg_result[11]~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4196): Failed to find INSTANCE '\reg_result[1] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4226): Failed to find INSTANCE '\reg_result[2] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4256): Failed to find INSTANCE '\reg_result[3] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4286): Failed to find INSTANCE '\reg_result[4] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4316): Failed to find INSTANCE '\reg_result[5] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4346): Failed to find INSTANCE '\reg_result[6] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4376): Failed to find INSTANCE '\reg_result[7] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4406): Failed to find INSTANCE '\reg_result[8] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4436): Failed to find INSTANCE '\reg_result[9] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4126): Failed to find INSTANCE '\reg_sat_1~feeder '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1785): Failed to find INSTANCE '\reg_shift_val[0] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1775): Failed to find INSTANCE '\reg_shift_val[0]~feeder '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1752): Failed to find INSTANCE '\reg_shift_val[1] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1820): Failed to find INSTANCE '\reg_shift_val[2] '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(45): Failed to find INSTANCE '\result[0]~output '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(145): Failed to find INSTANCE '\result[10]~output '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(155): Failed to find INSTANCE '\result[11]~output '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(55): Failed to find INSTANCE '\result[1]~output '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(65): Failed to find INSTANCE '\result[2]~output '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(75): Failed to find INSTANCE '\result[3]~output '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(85): Failed to find INSTANCE '\result[4]~output '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(95): Failed to find INSTANCE '\result[5]~output '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(105): Failed to find INSTANCE '\result[6]~output '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(115): Failed to find INSTANCE '\result[7]~output '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(125): Failed to find INSTANCE '\result[8]~output '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(135): Failed to find INSTANCE '\result[9]~output '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4150): Failed to find INSTANCE '\saturation~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4103): Failed to find INSTANCE '\sat~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1766): Failed to find INSTANCE '\shift_val[0]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1743): Failed to find INSTANCE '\shift_val[1]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1811): Failed to find INSTANCE '\shift_val[2]~input '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4450): Failed to find INSTANCE '\signedoutput[10]~9 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4180): Failed to find INSTANCE '\signedoutput[1]~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4210): Failed to find INSTANCE '\signedoutput[2]~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4240): Failed to find INSTANCE '\signedoutput[3]~2 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4270): Failed to find INSTANCE '\signedoutput[4]~3 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4300): Failed to find INSTANCE '\signedoutput[5]~4 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4330): Failed to find INSTANCE '\signedoutput[6]~5 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4360): Failed to find INSTANCE '\signedoutput[7]~6 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4390): Failed to find INSTANCE '\signedoutput[8]~7 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(4420): Failed to find INSTANCE '\signedoutput[9]~8 '.
+# ** Error (suppressible): (vsim-SDF-3250) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo(1420): Failed to find INSTANCE '\tmp_inputb~0 '.
+# ** Error (suppressible): (vsim-SDF-3266) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo: Instance 'reg_overflow' is not a module or architecture.
+# ** Error (suppressible): (vsim-SDF-3266) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo: Instance 'reg_sat' is not a module or architecture.
+# ** Error (suppressible): (vsim-SDF-3266) /home/raswa151/courses/tsea84-labs/lab2/PE_7_1200mv_85c_v_slow.sdo: Instance 'reg_sat_1' is not a module or architecture.
+# ** Error (suppressible): (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
+# Error loading design
+Error loading design
+# End time: 10:53:02 on Sep 26,2024, Elapsed time: 0:00:03
+# Errors: 322, Warnings: 4
+[31;1mfail[0m[m (P=0 S=0 F=1 T=1) lib.tb_pe.all (3.5 seconds)
+[0m
+[m==== Summary =========================
+[0m[31;1mfail[0m[m [0m[mlib.tb_pe.all (3.5 seconds)
+[0m[m======================================
+[0m[32;1mpass[0m[m 0 of 1
+[0m[31;1mfail[0m[m 1 of 1
+[0m[m======================================
+[0m[mTotal time was 3.5 seconds
+[0m[mElapsed time was 3.5 seconds
+[0m[m======================================
+[0m[31;1mSome failed![0m[m
+[0m

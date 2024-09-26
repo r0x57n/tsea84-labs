@@ -50,8 +50,7 @@ lib.set_generic("file_name", abspath("tests.txt"))
 # Set if logic_op is an enum or binary
 # False: use enum
 # True: use binary (for Verilog and synthesized)
-lib.set_generic("logic_op", False)
-
+lib.set_generic("logic_op", True)
 
 ## Coverage callback
 #def post_run(results):
